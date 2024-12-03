@@ -675,20 +675,26 @@ class EmployeeForm(EthosMainWindow):
     def enroll_finger(self):
         from firmware.fps_main import Fingerprint
         f = Fingerprint("/dev/ttyUSB0", 115200)
+        count = f.get_enrolled_cnt()
 
         try:
-            if f.init():
-                print("Enroll Fingerprint: %s" % str(f.enroll()))
-                f.enroll()
+            while f.get_enrolled_cnt() != count + 1:
+                time.sleep(0.5)
                 idtemp = str(f.identify())
-                return idtemp
-            else:
-                self.popup_dialogue = PopupDialog("Sorry, Finger Sensor Failed To Connect!")
-                self.popup_dialogue.show()
-                self.led_controller.set_orange()
-                time.sleep(2)
-                self.led_controller.clear_leds()
-                self.popup_dialogue.accept()
+                if f.init():
+                    print("Enroll Fingerprint: %s" % str(f.enroll()))
+                    f.enroll()
+                    time.sleep(0.5)
+                    count = count + 1
+                    # idtemp = str(f.identify())
+                    return idtemp
+                else:
+                    self.popup_dialogue = PopupDialog("Sorry, Finger Sensor Failed To Connect!")
+                    self.popup_dialogue.show()
+                    self.led_controller.set_orange()
+                    time.sleep(2)
+                    self.led_controller.clear_leds()
+                    self.popup_dialogue.accept()
         except Exception as e:
             print("Error capturing fingerprint:", e)
             f.close_serial()
