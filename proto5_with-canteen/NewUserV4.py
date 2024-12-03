@@ -678,23 +678,23 @@ class EmployeeForm(EthosMainWindow):
         count = f.get_enrolled_cnt()
 
         try:
-            while f.get_enrolled_cnt() != count + 1:
+            # while f.get_enrolled_cnt() != count + 1:
+            time.sleep(0.5)
+            idtemp = str(f.identify())
+            if f.init():
+                print("Enroll Fingerprint: %s" % str(f.enroll()))
+                f.enroll()
                 time.sleep(0.5)
-                idtemp = str(f.identify())
-                if f.init():
-                    print("Enroll Fingerprint: %s" % str(f.enroll()))
-                    f.enroll()
-                    time.sleep(0.5)
-                    count = count + 1
-                    # idtemp = str(f.identify())
-                    return idtemp
-                else:
-                    self.popup_dialogue = PopupDialog("Sorry, Finger Sensor Failed To Connect!")
-                    self.popup_dialogue.show()
-                    self.led_controller.set_orange()
-                    time.sleep(2)
-                    self.led_controller.clear_leds()
-                    self.popup_dialogue.accept()
+                # count = count + 1
+                # idtemp = str(f.identify())
+                return idtemp
+            else:
+                self.popup_dialogue = PopupDialog("Sorry, Finger Sensor Failed To Connect!")
+                self.popup_dialogue.show()
+                self.led_controller.set_orange()
+                time.sleep(2)
+                self.led_controller.clear_leds()
+                self.popup_dialogue.accept()
         except Exception as e:
             print("Error capturing fingerprint:", e)
             f.close_serial()
