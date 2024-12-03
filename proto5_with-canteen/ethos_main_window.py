@@ -35,7 +35,6 @@ class EthosMainWindow(QWidget):
         # Set background image
         self.background_image = QLabel(self)
         print("IMAGE_BASE_PATH:", self.config.IMAGE_BASE_PATH)
-
         self.background_image.setPixmap(QPixmap(os.path.join(self.current_directory, self.config.IMAGE_BASE_PATH + "background.png")))
         self.background_image.setGeometry(0, 0, self.width, self.height)
         # Create label for date and time
