@@ -44,9 +44,9 @@ class EnvConfig:
     def __init__(self):
         # Hardcoded default values
         self.default_config = {
-            "DB_PATH": "default_db_path",
-            "PORT": "COM1",  # Replace with your actual port name
-            "BAUD_RATE": "9600",
+            "DB_PATH": "/infrastructure/database/ethos_firmware.db",
+            "PORT": "/dev/ttyUSB0",  # Replace with your actual port name
+            "BAUD_RATE": "115200",
             "INTERVAL": "500",
             "IMAGE_BASE_PATH": "assets/"  # Default folder for images
         }
