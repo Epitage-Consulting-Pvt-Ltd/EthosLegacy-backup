@@ -158,6 +158,7 @@ class EditUserWindow(EthosMainWindow):
             self.button.setDisabled(True)
         # Dictionary to store enrolled finger IDs with their names
         self.enrolled_fingers_dict = {}
+        self.enrolled_fingers = []
         # Adding buttons to the layout
         main_layout = QVBoxLayout()
         # First row layout
@@ -450,8 +451,7 @@ class EditUserWindow(EthosMainWindow):
     def handle_finger_button_click(self):
         finger_id = self.enroll_finger()
         if finger_id:
-            is_fps_exist = self.employeeController.verify_employee_fps(
-                finger_id)
+            is_fps_exist = self.employeeController.verify_employee_fps(finger_id)
             if is_fps_exist:
                 print("fps already exist")
                 # self.employeeController.restart_connection()
