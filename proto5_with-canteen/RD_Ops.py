@@ -10,6 +10,7 @@ import RPi.GPIO as GPIO
 import sqlite3
 # from rfid_reader import RFIDReader
 import threading
+import pygame as pg
 white = (255, 255, 255)
 blue = (0, 0, 255)
 green = (0, 255, 0)
@@ -95,6 +96,20 @@ class RFIDDatabaseOperations:
                     print(f"Employee Name: {emp_id}")
                     # print(f"Timestamp: {employee['timestamp']}")
                     set_all_leds(green)
+                    freq = 44100    # audio CD quality
+                    bitsize = -16   # unsigned 16 bit
+                    channels = 2    # 1 is mono, 2 is stereo
+                    buffer = 2048   # number of samples (experiment to get right sound)
+                    pg.mixer.init(freq, bitsize, channels, buffer)
+                    # optional volume 0 to 1.0
+                    pg.mixer.music.set_volume(1.0)
+
+
+                    # Load the MP3 file
+                    pg.mixer.music.load('thank-you-168416.mp3')
+
+                    # Play the audio file
+                    pg.mixer.music.play()
 
                     # Print the employee details to the thermal printer
                     printer.set(

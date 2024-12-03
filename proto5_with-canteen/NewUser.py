@@ -23,6 +23,7 @@ import datetime
 import os
 import shutil
 import time
+import pygame as pg
 
 class EmployeeForm(EthosMainWindow):
     def __init__(self):
@@ -513,6 +514,17 @@ class EmployeeForm(EthosMainWindow):
 
         QMessageBox.information(
         self, "Success", "Employee information saved successfully.")
+        freq = 44100    # audio CD quality
+        bitsize = -16   # unsigned 16 bit
+        channels = 2    # 1 is mono, 2 is stereo
+        buffer = 2048   # number of samples (experiment to get right sound)
+        pg.mixer.init(freq, bitsize, channels, buffer)
+        # optional volume 0 to 1.0
+        pg.mixer.music.set_volume(1.0)
+        # Load the MP3 file
+        pg.mixer.music.load('thank-you-168416.mp3')
+        # Play the audio file
+        pg.mixer.music.play()
 
     def validate_age(self, dob_text):
         try:
