@@ -28,12 +28,29 @@ class RoleRepository:
             return self._create_role_instance(result[0])
         return None
 
-    def get_all_roles(self, page=1, page_size=10):
+    # def get_all_roles(self, page=1, page_size=10):
         offset = (page - 1) * page_size
         query = "SELECT * FROM role LIMIT ? OFFSET ?"
         params = (page_size, offset)
         result = self.db_manager.fetch_data(query, params)
         return [self._create_role_instance(row) for row in result]
+
+    def get_all_roles(self, page=1, page_size=10):
+        offset = (page - 1) * page_size
+        query = "SELECT * FROM role LIMIT ? OFFSET ?"
+        params = (page_size, offset)
+        result = self.db_manager.fetch_data(query, params)
+        
+        # Log query and results
+        print(f"Executing query: {query} with params: {params}")
+        print(f"Query result: {result}")
+
+        if not result:
+            return []
+
+        return [self._create_role_instance(row) for row in result]
+
+    
 
     def _create_role_instance(self, row):
         role_id, role_name = row
