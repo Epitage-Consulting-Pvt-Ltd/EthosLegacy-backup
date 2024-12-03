@@ -9,15 +9,19 @@ from utilities.keyboard import *
 from utilities.year_selector import YearSelector
 from utilities.popup_example import MainWindow, PopupDialog
 
+
 from infrastructure.database.entity.employee import Employee
 from infrastructure.database.entity.finger_point_scan import FingerPointScan
 
 from controllers.employee_controller import EmployeeController
 from controllers.role_controller import RoleController
 from firmware.led import LEDStripController
+# from firmware.write_rfid import RFIDWrite
 
 import RPi.GPIO as GPIO
 import datetime
+import os
+import shutil
 import time
 
 class EmployeeForm(EthosMainWindow):
@@ -87,6 +91,7 @@ class EmployeeForm(EthosMainWindow):
         self.newID.resize(335, 30)
         self.newID.setMaxLength(10)
         self.newID.installEventFilter(self)
+        # self.textChanged.connect(self.handle_client_emp_id)
         self.newID.textChanged.connect(self.handle_client_emp_id)
 
         self.label_id = QLabel('Name :', self)
@@ -108,6 +113,7 @@ class EmployeeForm(EthosMainWindow):
         self.text_photo.move(128, 171)
         self.text_photo.resize(335, 30)
         self.text_photo.installEventFilter(self)
+        # self.text_photo.mousePressEvent = self.open_file_dialog
         self.magnifyingbtn = ImgButton(self, "MagnifyingGlass.png", 25,25,25,25,"#D9D9D9",435,174,self.open_file_dialog)
 
         self.calendar_widget = QCalendarWidget(self)
@@ -126,6 +132,7 @@ class EmployeeForm(EthosMainWindow):
         self.text_dob.move(128, 208)
         self.text_dob.resize(335, 30)
         self.text_dob.installEventFilter(self)
+        # self.text_dob.mousePressEvent = self.show_calendar
         self.calendar_widget.clicked.connect(self.handle_date_selection)
         self.calendar = ImgButton(self, "Calendar.png", 25,25,25,25,"#D9D9D9",435,211,self.show_calendar)
 
@@ -176,6 +183,59 @@ class EmployeeForm(EthosMainWindow):
                                  100, 100, 100, 100, "#D9D9D9", 20, 541, self.show_popup)
         self.facebtn.clicked.connect(self.show_popup)
         self.show()
+
+
+        # self.text_id.setStyleSheet(
+        #     """
+        #     QLineEdit {
+        #         /* Original QLineEdit style */
+        #     }
+        #     QLineEdit:focus {
+        #         border: 2px solid orange; /* Change the border color when focused */
+        #     }
+        #     """
+        # )
+
+        # self.newID.setStyleSheet(
+        #     """
+        #     QLineEdit {
+        #         /* Original QLineEdit style */
+        #     }
+        #     QLineEdit:focus {
+        #         border: 2px solid orange; /* Change the border color when focused */
+        #     }
+        #     """
+        # )
+        # self.text_photo.setStyleSheet(
+        #     """
+        #     QLineEdit {
+        #         /* Original QLineEdit style */
+        #     }
+        #     QLineEdit:focus {
+        #         border: 2px solid orange; /* Change the border color when focused */
+        #     }
+        #     """
+        # )
+        # self.text_dob.setStyleSheet(
+        #     """
+        #     QLineEdit {
+        #         /* Original QLineEdit style */
+        #     }
+        #     QLineEdit:focus {
+        #         border: 2px solid orange; /* Change the border color when focused */
+        #     }
+        #     """
+        # )
+        # self.label_rfid.setStyleSheet(
+        #     """
+        #     QLineEdit {
+        #         /* Original QLineEdit style */
+        #     }
+        #     QLineEdit:focus {
+        #         border: 2px solid orange; /* Change the border color when focused */
+        #     }
+        #     """
+        # )  
         self.show()
     
     def open_file_dialog(self, event=None):
@@ -226,12 +286,15 @@ class EmployeeForm(EthosMainWindow):
         self.newID.clear()
         self.text_id.clear()
         self.text_dob.clear()
+        # self.label_photo.clear()
         self.text_photo.clear()
         self.label_rfid.clear()
+        # self.label_fing.clear()
         # Clear the enrolled fingerprints list
         self.enrolled_fingers = []
         # After saving employee info successfully, reset button styles
         self.reset_button_styles()
+
         # Delete registered fingerprints from the sensor hardware
         self.delete_registered_fingerprints()
         self.role_dropdown.clear()
@@ -243,10 +306,12 @@ class EmployeeForm(EthosMainWindow):
         """
         # Get the list of enrolled finger IDs
         enrolled_finger_ids = list(self.enrolled_fingers_dict.values())
+
         # Check if there are any enrolled finger IDs
         if enrolled_finger_ids:
             # Convert IDs to integers if necessary
             enrolled_finger_ids = [int(id) for id in enrolled_finger_ids]
+
             # Call the method to delete fingerprints
             self.delete_fingerprints(enrolled_finger_ids)
         else:
@@ -258,6 +323,7 @@ class EmployeeForm(EthosMainWindow):
         Deletes fingerprint IDs provided in the list.
         """
         from firmware.fps_main import Fingerprint
+
         # Initialize the fingerprint controller
         f = Fingerprint("/dev/ttyUSB0", 115200)
 
@@ -280,7 +346,12 @@ class EmployeeForm(EthosMainWindow):
         if hasattr(self, 'rfid_thread') and self.rfid_thread.isRunning():
             self.rfid_thread.quit()  # Terminate the thread
             self.rfid_thread.wait()  # Wait for the thread to finish
+
         # Start a new thread to handle RFID card scanning
+        # self.rfid_write = RFIDWrite(self.text_id.text())
+        # self.rfid_write.start_write_thread()
+        # self.employeeController.write_rfid()
+        # self.employeeController.rfid_write.rfid_scanned.connect(self.handle_rfid_scanned)
         self.rfid_thread = RFIDThread(
             self.text_id.text(), self.led_controller)  # Pass the LED controller
         self.rfid_thread.rfid_scanned.connect(self.handle_rfid_scanned)
@@ -292,8 +363,11 @@ class EmployeeForm(EthosMainWindow):
 
     def handle_rfid_scanned(self, id):
         # Close the popup after scanning the RFID card
+        # self.label_rfid.setText(str(id))
+        # self.rfid_write.rfid_scanned.connect(str(id))
         is_verified = self.employeeController.verify_employee_rf_id(str(id))
         print("id verified in db")
+        
         if not is_verified:
             self.label_rfid.setText(str(id))
             print("New ID accepted for DB operation")
@@ -310,48 +384,33 @@ class EmployeeForm(EthosMainWindow):
         # Clean up LED resources before closing the application
         self.led_controller.clear_leds()
         event.accept()  # Accept the close event
-      
-    def handle_finger_button_click(self):
-        from firmware.fps_main import Fingerprint
-        f = Fingerprint("/dev/ttyUSB0", 115200)
 
-        try:
-            if f.init():
-                print("Enrolling fingerprint...")
-                f.enroll()
-                time.sleep(0.5)
-                finger_id = str(f.identify())
-        
-                if finger_id:
-                    is_fps_exist = self.employeeController.verify_employee_fps(finger_id)
-                    if is_fps_exist:
-                        print("fps already exist")
-                        QMessageBox.warning(self, "Duplicate Registration", "Finger already registered.")
-                    else:
-                        print("fps not exist")
-                        button = self.sender()
-                        finger_name = [name for name, btn in self.finger_buttons.items() if btn == button][0]
-                
-                        if finger_id in self.enrolled_fingers:
-                            QMessageBox.warning(self, "Duplicate Registration", "Finger already registered.")
-                        else:
-                            self.enrolled_fingers.append(finger_id)
-                            self.label_fing.setText(', '.join(self.enrolled_fingers))
-                            self.update_button_appearance(button)
-                            self.enrolled_fingers_dict[finger_name] = finger_id
-                            self.print_enrolled_fingers_dict()
+    def handle_finger_button_click(self):
+        finger_id = self.enroll_finger()
+        if finger_id:
+            is_fps_exist = self.employeeController.verify_employee_fps(finger_id)
+            if is_fps_exist:
+                print("fps already exist")
+                # self.employeeController.restart_connection()
+                QMessageBox.warning(
+                        self, "Duplicate Registration", "Finger already registered.")
             else:
-                self.popup_dialogue = PopupDialog("Sorry, Finger Sensor Failed To Connect!")
-                self.popup_dialogue.show()
-                self.led_controller.set_orange()
-                time.sleep(2)
-                self.led_controller.clear_leds()
-                self.popup_dialogue.accept()
-        
-        except Exception as e:
-            print("Error capturing fingerprint:", e)
-        finally:
-            f.close_serial()
+                print("fps not exist")
+                button = self.sender()
+                finger_name = [
+                    name for name, btn in self.finger_buttons.items() if btn == button][0]
+                if finger_id in self.enrolled_fingers:
+                    QMessageBox.warning(
+                        self, "Duplicate Registration", "Finger already registered.")
+                else:
+                    self.enrolled_fingers.append(finger_id)
+                    self.label_fing.setText(', '.join(self.enrolled_fingers))
+                    self.update_button_appearance(button)
+                    # Update the dictionary
+                    self.enrolled_fingers_dict[finger_name] = finger_id
+
+                    # Print the dictionary
+                    self.print_enrolled_fingers_dict()
 
     def print_enrolled_fingers_dict(self):
         print("Enrolled Fingers Dictionary:")
@@ -512,6 +571,17 @@ class EmployeeForm(EthosMainWindow):
                 self.remove_border(self.label_rfid)
                 self.virtual_keyboard.close()
                 return True
+            # elif obj == self.role_dropdown and event is not None and event.type() == QEvent.Type.MouseButtonPress:
+            #     self.role_dropdown.setStyleSheet("QComboBox: 2px solid orange;")
+            #     # time.sleep(2)
+            #     # self.remove_border(self.role_dropdown)
+            #     self.remove_border(self.text_id)
+            #     self.remove_border(self.newID)
+            #     self.remove_border(self.text_dob)
+            #     self.remove_border(self.text_photo)
+            #     self.remove_border(self.label_rfid)
+            #     self.virtual_keyboard.close()
+            #     return True
             elif obj == self.label_rfid and event is not None and event.type() == QEvent.Type.MouseButtonPress:
                 self.write_rfid(event)
                 self.label_rfid.setStyleSheet("border: 2px solid orange;")
@@ -522,6 +592,10 @@ class EmployeeForm(EthosMainWindow):
                 self.virtual_keyboard.close()
                 return True
             elif event is not None and event.type() == QEvent.Type.MouseButtonPress:
+                # self.text_photo.mousePressEvent = self.open_file_dialog
+                # self.role_dropdown.currentIndexChanged.connect(self.handle_role_selection)
+                # self.role_dropdown.setStyleSheet("border: 2px solid orange;")
+                self.remove_border(self.label_rfid)
                 self.remove_border(self.text_id)
                 self.remove_border(self.newID)
                 self.remove_border(self.text_dob)
@@ -529,6 +603,7 @@ class EmployeeForm(EthosMainWindow):
                 self.virtual_keyboard.close()
                 return True
         return super().eventFilter(obj, event)
+
 
     def show_calendar(self, event=None):
         if event is not None:
@@ -577,6 +652,8 @@ class EmployeeForm(EthosMainWindow):
     def open_virtual_keyboard(self, target):
         if hasattr(self, 'virtual_keyboard') and self.virtual_keyboard.isVisible():
             self.virtual_keyboard.close() 
+
+        # self.virtual_keyboard = VirtualKeyboard()
         self.virtual_keyboard.target = target
 
         screen_geometry = QGuiApplication.primaryScreen().geometry()
@@ -585,6 +662,7 @@ class EmployeeForm(EthosMainWindow):
 
         self.virtual_keyboard.move(keyboard_x, keyboard_y)
         self.virtual_keyboard.show()
+
         target.setAttribute(Qt.WA_InputMethodEnabled)
 
     def show_popup(self):
@@ -595,30 +673,38 @@ class EmployeeForm(EthosMainWindow):
         popup.addButton(QMessageBox.Ok)
         popup.exec_()
 
-    # def enroll_finger(self):
-    #     from firmware.fps_main import Fingerprint
-    #     f = Fingerprint("/dev/ttyUSB0", 115200)
-    #     try:
-    #         if f.init():
-    #             print("Enroll Fingerprint: %s" % str(f.enroll()))
-    #             f.enroll()
-    #             time.sleep(0.5)
-    #             idtemp = str(f.identify())
-    #             return idtemp
-    #         else:
-    #             self.popup_dialogue = PopupDialog("Sorry, Finger Sensor Failed To Connect!")
-    #             self.popup_dialogue.show()
-    #             self.led_controller.set_orange()
-    #             time.sleep(2)
-    #             self.led_controller.clear_leds()
-    #             self.popup_dialogue.accept()
-    #     except Exception as e:
-    #         print("Error capturing fingerprint:", e)
-    #         f.close_serial()
-    #         return False
+    def enroll_finger(self):
+        from firmware.fps_main import Fingerprint
+        f = Fingerprint("/dev/ttyUSB0", 115200)
+        count = f.get_enrolled_cnt()
+
+        try:
+            # while f.get_enrolled_cnt() != count + 1:
+            # time.sleep(0.5)
+            # idtemp = str(f.identify())
+            if f.init():
+                print("Enroll Fingerprint: %s" % str(f.enroll()))
+                f.enroll()
+                time.sleep(0.5)
+                # count = count + 1
+                idtemp = str(f.identify())
+                return idtemp
+            else:
+                self.popup_dialogue = PopupDialog("Sorry, Finger Sensor Failed To Connect!")
+                self.popup_dialogue.show()
+                self.led_controller.set_orange()
+                time.sleep(2)
+                self.led_controller.clear_leds()
+                self.popup_dialogue.accept()
+        except Exception as e:
+            print("Error capturing fingerprint:", e)
+            f.close_serial()
+            return False
 
     def clear(self):
         print("Click on Qlineedit to scan RFID card.")
+
+# ********    MOVE TO FIRMWARE CODE   {
 
 class RFIDThread(QThread):
     rfid_scanned = pyqtSignal(str)  # Define a signal to pass RFID data
@@ -649,3 +735,6 @@ class RFIDThread(QThread):
         finally:
             self.led_controller.clear_leds()  # Clear LEDs after RFID operation
             self.running = False
+
+# # ********                             }
+
