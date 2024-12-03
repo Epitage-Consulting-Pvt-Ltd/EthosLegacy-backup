@@ -35,7 +35,7 @@ class EthosMainWindow(QWidget):
         # Set background image
         self.background_image = QLabel(self)
         self.background_image.setPixmap(QPixmap(os.path.join(
-            self.current_directory, self.config.IMAGE_BASE_PATH + "background.png")))
+        self.current_directory, self.config.IMAGE_BASE_PATH + "background.png")))
         self.background_image.setGeometry(0, 0, self.width, self.height)
         # Create label for date and time
         self.date_time_label = QLabel(self)
@@ -46,7 +46,7 @@ class EthosMainWindow(QWidget):
         self.date_time_label.setFont(font_small)
 
         self.backbtn = ImgButton(
-            self, "BackIcon.png", 30, 30, 30, 30, "#D9D9D9", 5, 44, self.navigate_back)
+        self, "BackIcon.png", 30, 30, 30, 30, "#D9D9D9", 5, 44, self.navigate_back)
 
     def update_date_time(self):
         # Get current date and time
