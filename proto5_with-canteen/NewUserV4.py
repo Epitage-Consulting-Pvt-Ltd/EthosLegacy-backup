@@ -314,44 +314,57 @@ class EmployeeForm(EthosMainWindow):
     def handle_finger_button_click(self):
         from firmware.fps_main import Fingerprint
         f = Fingerprint("/dev/ttyUSB0", 115200)
-
+        
         try:
             if f.init():
-                print("Enrolling fingerprint...")
-                f.enroll()
-                time.sleep(0.5)
-                finger_id = str(f.identify())
-        
-                if finger_id:
-                    is_fps_exist = self.employeeController.verify_employee_fps(finger_id)
-                    if is_fps_exist:
-                        print("fps already exist")
-                        QMessageBox.warning(self, "Duplicate Registration", "Finger already registered.")
-                    else:
-                        print("fps not exist")
-                        button = self.sender()
-                        finger_name = [name for name, btn in self.finger_buttons.items() if btn == button][0]
-                
-                        if finger_id in self.enrolled_fingers:
-                            QMessageBox.warning(self, "Duplicate Registration", "Finger already registered.")
+                print("Starting fingerprint enrollment...")
+                # First check if finger is pressed
+                if f.is_finger_pressed():
+                    # Capture the finger
+                    if f.capture_finger():
+                        # Start enrollment process
+                        enroll_result = f.enroll()
+                        if enroll_result:
+                            time.sleep(0.5)
+                            finger_id = str(f.identify())
+                            
+                            if finger_id:
+                                is_fps_exist = self.employeeController.verify_employee_fps(finger_id)
+                                if is_fps_exist:
+                                    print("Fingerprint already exists in database")
+                                    QMessageBox.warning(self, "Duplicate Registration", "Finger already registered.")
+                                else:
+                                    print("New fingerprint registered successfully")
+                                    button = self.sender()
+                                    finger_name = [name for name, btn in self.finger_buttons.items() if btn == button][0]
+                                    
+                                    if finger_id in self.enrolled_fingers:
+                                        QMessageBox.warning(self, "Duplicate Registration", "Finger already registered in current session.")
+                                    else:
+                                        self.enrolled_fingers.append(finger_id)
+                                        self.label_fing.setText(', '.join(self.enrolled_fingers))
+                                        self.update_button_appearance(button)
+                                        self.enrolled_fingers_dict[finger_name] = finger_id
+                                        self.print_enrolled_fingers_dict()
                         else:
-                            self.enrolled_fingers.append(finger_id)
-                            self.label_fing.setText(', '.join(self.enrolled_fingers))
-                            self.update_button_appearance(button)
-                            self.enrolled_fingers_dict[finger_name] = finger_id
-                            self.print_enrolled_fingers_dict()
+                            print("Enrollment failed")
+                    else:
+                        print("Failed to capture fingerprint")
+                else:
+                    print("No finger detected")
             else:
-                self.popup_dialogue = PopupDialog("Sorry, Finger Sensor Failed To Connect!")
+                self.popup_dialogue = PopupDialog("Finger Sensor Connection Failed")
                 self.popup_dialogue.show()
                 self.led_controller.set_orange()
                 time.sleep(2)
                 self.led_controller.clear_leds()
                 self.popup_dialogue.accept()
-        
+                
         except Exception as e:
-            print("Error capturing fingerprint:", e)
+            print("Error in fingerprint process:", e)
         finally:
             f.close_serial()
+
 
     def print_enrolled_fingers_dict(self):
         print("Enrolled Fingers Dictionary:")
