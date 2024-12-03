@@ -1,0 +1,1 @@
+cv2.error: OpenCV(4.5.1) ../modules/imgproc/src/self.cpp:182: error: (-215:Assertion failed) !_src.empty() in function 'cvtColor'

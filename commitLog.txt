@@ -1,0 +1,919 @@
+389e271 - Chetan2312, 2 minutes ago : 	new file:   commitLog.txt
+0bac2e0 - Chetan2312, 13 days ago : Parallel Threading on Splashscreen
+b54fc30 - Chetan2312, 13 days ago : Parallel Threading on Splashscreen
+516635f - Chetan2312, 13 days ago : Parallel Threading on Splashscreen
+1738ff9 - Chetan2312, 13 days ago : Parallel Threading on Splashscreen
+874a558 - Chetan2312, 13 days ago : Parallel Threading on Splashscreen
+9645e23 - Chetan2312, 2 weeks ago : 	modified:   NewUserV4.py 	modified:   UserMenu.py 	new file:   __pycache__/EditTimeSlot.cpython-39.pyc 	new file:   __pycache__/MenuScreenV4.cpython-39.pyc 	new file:   __pycache__/NewTimeSlots.cpython-39.pyc 	new file:   __pycache__/NewUserV4.cpython-39.pyc 	new file:   __pycache__/NewUserV5.cpython-39.pyc 	new file:   __pycache__/NewUserV6.cpython-39.pyc 	new file:   __pycache__/RD_Ops.cpython-39.pyc 	new file:   __pycache__/TimeSlots.cpython-39.pyc 	new file:   __pycache__/UserMenu.cpython-39.pyc 	new file:   __pycache__/canteenSettings.cpython-39.pyc 	new file:   __pycache__/canteen_main.cpython-39.pyc 	new file:   __pycache__/editFoodMenu.cpython-39.pyc 	new file:   __pycache__/epitage.cpython-39.pyc 	new file:   __pycache__/foodMenu.cpython-39.pyc 	new file:   __pycache__/fps.cpython-39.pyc 	new file:   __pycache__/keyboard3.cpython-39.pyc 	new file:   __pycache__/newFoodMenu.cpython-39.pyc 	new file:   __pycache__/settings.cpython-39.pyc 	new file:   __pycache__/sqliteInterface.cpython-39.pyc 	modified:   fps.py 	new file:   utilities/__pycache__/__init__.cpython-39.pyc 	new file:   utilities/__pycache__/components.cpython-39.pyc 	../../CanteenModule/__pycache__/ 	../../CommModule/ 	../../DB/2_sqliteDB_sync_email.py 	../../DB/3_sqliteDB_backup.py 	../../DB/EditDetails_sqliteDB.py 	../../DB/Edit_sqliteDB.py 	../../DB/backup.db 	../../DB/your_database.db 	../../UserModule/ 	../../__pycache__/ 	../../utilities/
+a39e133 - Chetan2312, 2 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+d1079f6 - Chetan2312, 2 weeks ago : Set Text error fix in RD_Ops.py
+727c37b - Chetan2312, 3 weeks ago : 	modified:   DB/__pycache__/sqliteInterface.cpython-39.pyc 	modified:   DB/mesh_save_combine.py 	CanteenModule/__pycache__/ 	DB/2_sqliteDB_sync_email.py 	DB/3_sqliteDB_backup.py 	DB/backup.db 	Device_V0.1/proto5_with-canteen/__pycache__/ 	Device_V0.1/proto5_with-canteen/utilities/__pycache__/
+a3f9632 - Chetan2312, 4 weeks ago : Set Text error fix in RD_Ops.py
+77dc14d - Chetan2312, 4 weeks ago : mesh combine db print receipt calls
+02a0f6c - Chetan2312, 4 weeks ago : mesh combine db print receipt calls
+8938974 - Chetan2312, 4 weeks ago : mesh combine db print receipt calls
+3edaf48 - Chetan2312, 4 weeks ago : mesh combine db print receipt calls
+d4f80bd - Chetan2312, 4 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+fc18130 - Chetan2312, 4 weeks ago : Default Splashscreen Verification and print receipt
+0f85deb - Indrayani Nangare, 4 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+04d6074 - Indrayani Nangare, 4 weeks ago : Speaker testing
+de1e3e1 - Chetan2312, 4 weeks ago : Default Splashscreen Verification and print receipt
+093940b - Chetan2312, 4 weeks ago : Default Splashscreen Verification and print receipt
+00101a7 - Chetan2312, 4 weeks ago : Default Splashscreen Verification and print
+01572a9 - Chetan2312, 4 weeks ago : Default Splashscreen Verification and print
+059bdd1 - Chetan2312, 4 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+72e651e - Chetan2312, 4 weeks ago : Default Splashscreen Verification and print
+ef38ec5 - indrayani1710, 4 weeks ago : 	modified:   audio.py
+905156d - Indrayani Nangare, 5 weeks ago : Speaker testing
+776a15b - Indrayani Nangare, 5 weeks ago : Speaker testing
+180c676 - Indrayani Nangare, 5 weeks ago : Speaker testing
+1a67107 - Indrayani Nangare, 5 weeks ago : Speaker testing
+9fe7ed9 - Chetan2312, 5 weeks ago : Default Splashscreen Verification and print with audio
+ca6d8ce - Chetan2312, 5 weeks ago : Default Splashscreen Verification and print with audio
+8fca437 - Chetan2312, 5 weeks ago : Default Splashscreen Verification and print with audio
+f1b13c4 - Chetan2312, 5 weeks ago : Default Splashscreen Verification and print
+e4ee94e - Chetan2312, 5 weeks ago : Default Splashscreen Verification and print
+9a87ad4 - Chetan2312, 5 weeks ago : Default Splashscreen Verification and print
+40354ae - Indrayani Nangare, 5 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+19b6bdd - Indrayani Nangare, 5 weeks ago : Speaker testing
+f1f5c9c - Chetan2312, 5 weeks ago : Default Splashscreen Verification and print
+ab14c9e - Chetan2312, 5 weeks ago : Default Splashscreen Verification and print
+a01b5ec - Chetan2312, 5 weeks ago : Default Splashscreen Verification and print
+8b97ba4 - Chetan2312, 5 weeks ago : Default Splashscreen Verification and print
+277ae02 - Chetan2312, 5 weeks ago : Default Splashscreen Verification and print
+33b68c4 - Chetan2312, 5 weeks ago : Default Splashscreen Verification and print
+55a3fa3 - Chetan2312, 5 weeks ago : scan rfid and print coupon
+3ae013b - Chetan2312, 5 weeks ago : scan rfid and print coupon
+1648f27 - Indrayani Nangare, 5 weeks ago : Add files via upload
+9f83758 - Indrayani Nangare, 5 weeks ago : Delete DB/Piaggio1.png
+9f7d9d8 - Chetan2312, 5 weeks ago : scan rfid and print coupon
+4a1d39c - Indrayani Nangare, 5 weeks ago : Add files via upload
+b782e21 - Indrayani Nangare, 5 weeks ago : Delete DB/piaggio1.png
+8ac95d2 - Chetan2312, 5 weeks ago : scan rfid and print coupon
+6e5edf7 - Chetan2312, 5 weeks ago : scan rfid and print coupon
+8b7ddf7 - Chetan2312, 5 weeks ago : scan rfid and print coupon
+d3968e9 - Chetan2312, 5 weeks ago : scan rfid and print coupon
+661f7b4 - Chetan2312, 5 weeks ago : scan rfid and print coupon
+1cb4f6b - Chetan2312, 5 weeks ago : scan rfid and print coupon
+cead705 - Chetan2312, 5 weeks ago : scan rfid and print coupon
+cc557ba - Indrayani Nangare, 5 weeks ago : Add files via upload
+478894c - Indrayani Nangare, 5 weeks ago : Delete DB/piaggio1.png
+d08fa0d - Indrayani Nangare, 5 weeks ago : Delete DB/piaggio.png
+8039ab2 - Chetan2312, 5 weeks ago : scan rfid and print coupon
+8730538 - Chetan2312, 5 weeks ago : scan rfid and print coupon
+4faea5f - Chetan2312, 5 weeks ago : scan rfid and print coupon
+bc87ebe - Indrayani Nangare, 5 weeks ago : Add files via upload
+403a913 - Chetan2312, 5 weeks ago : scan rfid and print coupon
+76ee603 - Chetan2312, 5 weeks ago : scan rfid and print coupon
+fb2e42d - Indrayani Nangare, 5 weeks ago : Add files via upload
+6b87a14 - Indrayani Nangare, 5 weeks ago : Delete DB/piaggio.png.png
+058b94b - Indrayani Nangare, 5 weeks ago : Add files via upload
+2e561ab - Indrayani Nangare, 5 weeks ago : Delete DB/piaggio.png.png
+7d2a289 - Chetan2312, 5 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+7ff1145 - Chetan2312, 5 weeks ago : scan rfid and print coupon
+7f06226 - Indrayani Nangare, 5 weeks ago : Add files via upload
+a664b90 - Chetan2312, 5 weeks ago : scan rfid and print coupon
+d7a83ed - Chetan2312, 5 weeks ago : scan rfid and print coupon
+f90393a - Chetan2312, 5 weeks ago : scan rfid and print coupon
+917777e - Chetan2312, 5 weeks ago : scan rfid and print coupon
+e7f8128 - Chetan2312, 5 weeks ago : scan rfid and print coupon
+e57f6ac - Chetan2312, 5 weeks ago : scan rfid and print coupon
+8ca7a4e - Chetan2312, 5 weeks ago : scan rfid and print coupon
+a0eba4f - Chetan2312, 5 weeks ago : scan rfid and print coupon
+e08f7d3 - Chetan2312, 5 weeks ago : scan rfid and print coupon
+297c588 - Chetan2312, 5 weeks ago : scan rfid and print coupon
+ddb1734 - Chetan2312, 5 weeks ago : scan rfid and print coupon
+31a8cab - indrayani1710, 5 weeks ago : Merge branch '9-sqlite-database-for-add-user' of https://github.com/epitage/Device_V0.0 into 9-sqlite-database-for-add-user
+e32cda3 - indrayani1710, 5 weeks ago : 	new file:   1_LED.py 	new file:   BLUE.py 	new file:   GREEN.py 	new file:   RED.py
+73fa54c - Chetan2312, 5 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+92d5b62 - Chetan2312, 5 weeks ago : scan rfid and print coupon
+ea8e141 - Indrayani Nangare, 5 weeks ago : printer testing
+4d02b56 - Chetan2312, 5 weeks ago : scan rfid and print coupon
+391485d - Chetan2312, 5 weeks ago : scan rfid and print coupon
+f2d62dc - Chetan2312, 5 weeks ago : scan rfid and print coupon
+af00099 - Chetan2312, 5 weeks ago : scan rfid and print coupon
+ec6db66 - Chetan2312, 5 weeks ago : scan rfid and print coupon
+a5291b8 - Chetan2312, 5 weeks ago : scan rfid and print coupon
+8686803 - Chetan2312, 5 weeks ago : Mesh trial to read and write data in sqlite.db - mesh Trial ; update sqlite via mesh in single code
+06b2a1b - Indrayani Nangare, 5 weeks ago : printer testing
+d5cf4a7 - Indrayani Nangare, 5 weeks ago : printer testing
+ba9915f - Indrayani Nangare, 5 weeks ago : printer testing
+e7435ec - Indrayani Nangare, 5 weeks ago : printer testing
+41a0f59 - Indrayani Nangare, 5 weeks ago : printer testing
+4c80c07 - Indrayani Nangare, 5 weeks ago : printer testing
+c32d050 - indrayani1710, 5 weeks ago : 	new file:   Escpos_1.py 	new file:   Escpos_2.py 	new file:   Escpos_USB.py
+4e3736f - Indrayani Nangare, 6 weeks ago : User Verification
+5add363 - Indrayani Nangare, 6 weeks ago : User Verification
+b92a6a3 - Indrayani Nangare, 6 weeks ago : User Verification
+7de53cf - Indrayani Nangare, 6 weeks ago : User Verification
+63e7b44 - Indrayani Nangare, 6 weeks ago : User Verification
+42f7fc8 - indrayani1710, 6 weeks ago : 	new file:   card_verifier.py
+7de85d6 - indrayani1710, 6 weeks ago : Merge branch '9-sqlite-database-for-add-user' of https://github.com/epitage/Device_V0.0 into 9-sqlite-database-for-add-user
+9f0ac5a - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - mesh Trial ; update sqlite via mesh in single code
+f9072ee - indrayani1710, 6 weeks ago : Merge branch '9-sqlite-database-for-add-user' of https://github.com/epitage/Device_V0.0 into 9-sqlite-database-for-add-user
+5dde505 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - mesh Trial ; update sqlite via mesh in single code
+73414cd - indrayani1710, 6 weeks ago : Merge branch '9-sqlite-database-for-add-user' of https://github.com/epitage/Device_V0.0 into 9-sqlite-database-for-add-user
+61d5698 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - mesh Trial ; update sqlite via mesh in single code
+de2b7d5 - indrayani1710, 6 weeks ago : Merge branch '9-sqlite-database-for-add-user' of https://github.com/epitage/Device_V0.0 into 9-sqlite-database-for-add-user
+15181d0 - indrayani1710, 6 weeks ago : 	new file:   2_verifyUserSqlite.py
+42e5427 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - mesh Trial ; update sqlite via mesh in single code
+64d2679 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - save data format error remove trials
+911b1ba - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - save data format error remove trials
+92ca10a - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - save data format error remove trials
+e517820 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - save data format error remove trials
+20fc6ab - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - save data format error remove trials
+5d9ffbc - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - save data format error remove trials
+016b485 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - save data format error remove trials
+f7e90f7 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - save data format error remove trials
+272f28a - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - save data format error remove trials
+1afcb60 - Chetan2312, 6 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+46bb907 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - save data format error remove trials
+6123010 - indrayani1710, 6 weeks ago : 	modified:   employee_data.db
+cc85547 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - save data format error remove trials
+814b673 - Chetan2312, 6 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+8c88507 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - save data format error remove trials
+af0003d - Indrayani Nangare, 6 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+94c7719 - Indrayani Nangare, 6 weeks ago : Mesh trial
+5ab6423 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - save data format error remove trials
+52934e4 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - save data format error remove trials
+09e431a - Chetan2312, 6 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+f40386c - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - save data format error remove trials
+400c9f6 - indrayani1710, 6 weeks ago : Merge branch '9-sqlite-database-for-add-user' of https://github.com/epitage/Device_V0.0 into 9-sqlite-database-for-add-user
+fcb032b - indrayani1710, 6 weeks ago : 	modified:   employee_data.db
+0b63b8e - Chetan2312, 6 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+c005767 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+a55785c - Indrayani Nangare, 6 weeks ago : Delete column
+b7c1f4c - Indrayani Nangare, 6 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+187bac1 - Indrayani Nangare, 6 weeks ago : Delete column
+b4e152a - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+2bef0f2 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+793982f - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+ad9b418 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+2be0afa - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+5202500 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+84dc914 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+6783fb5 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+5e5c4cb - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+58e5bdc - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+185e243 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+43172c2 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+ed91743 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+acf91da - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+c93fa9d - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+57b988c - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+11d46d7 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+67f31c9 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+48df2e1 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+c37adc0 - Chetan2312, 6 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+f79f98e - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+f88519f - Indrayani Nangare, 6 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+ef8f6e9 - Indrayani Nangare, 6 weeks ago : User verification
+e5c66bc - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+67df552 - Indrayani Nangare, 6 weeks ago : Add column in DB
+01a395a - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+d4034fc - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+6005e8c - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+284bd15 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+d191e48 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+3003ecf - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+d69e9ba - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+55677c7 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+9a257e4 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+0965faa - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+5f98a1c - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp - flag counter in sqlite db for card scan count
+feb917a - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp
+ce41bff - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp
+b8092fc - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp
+0c89ca7 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp
+49b24a4 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp
+47a0ebf - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp
+e13a465 - Chetan2312, 6 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+912b1a1 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp
+259e76f - Indrayani Nangare, 6 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+7d97eca - Indrayani Nangare, 6 weeks ago : Add column in DB
+1796e7e - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp
+9709720 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp
+74bfc18 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db - added current_timestamp
+d3721b7 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db
+b039ccb - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db
+6611a7c - Chetan2312, 6 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+b51042c - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db
+ac6ecc4 - indrayani1710, 6 weeks ago : 	new file:   employee_data.db
+d5177c1 - Chetan2312, 6 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+331b1a3 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db
+6c3c7c7 - Indrayani Nangare, 6 weeks ago : Data delete
+cb5b07f - Indrayani Nangare, 6 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+a607585 - Indrayani Nangare, 6 weeks ago : Data delete
+c00eec1 - Chetan2312, 6 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+34718d9 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db
+2d1e74a - Indrayani Nangare, 6 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+bdb7403 - Indrayani Nangare, 6 weeks ago : Data delete
+b2a6067 - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db
+dee2238 - Chetan2312, 6 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+9e0d62a - Chetan2312, 6 weeks ago : Mesh trial to read and write data in sqlite.db
+48974a2 - Indrayani Nangare, 6 weeks ago : Data delete
+0bec669 - Indrayani Nangare, 6 weeks ago : Data delete
+7add74a - Indrayani Nangare, 6 weeks ago : Database view
+fa6175f - Indrayani Nangare, 6 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+dca1680 - Indrayani Nangare, 6 weeks ago : Database view
+09aad2c - Chetan2312, 6 weeks ago : Merge remote-tracking branch 'origin/9-sqlite-database-for-add-user' into 9-sqlite-database-for-add-user
+a468673 - Chetan2312, 6 weeks ago : SQLite Trial for Verify User With Scan RFID Function
+94253ce - Chetan2312, 6 weeks ago : SQLite Trial for Verify User With Scan RFID Function
+9c7a539 - Indrayani Nangare, 6 weeks ago : Database view
+4f09fab - Chetan2312, 6 weeks ago : SQLite Trial for Verify User With Scan RFID Function
+6bda68a - Chetan2312, 6 weeks ago : SQLite Trial for Add User With Scan RFID Function
+b1f18b0 - Chetan2312, 6 weeks ago : SQLite Trial for Verify User Function
+6bb9e80 - Chetan2312, 6 weeks ago : SQLite Trial for Add User Function
+43959b6 - Indrayani Nangare, 6 weeks ago : Add files via upload
+42592fc - Chetan2312, 6 weeks ago : Merge remote-tracking branch 'origin/Main' into Main
+72658df - Indrayani Nangare, 6 weeks ago : Add Shutdown and reboot button
+b84879f - Chetan2312, 6 weeks ago : Mesh Trial CSV UpdateCode Trial
+9abdc26 - Indrayani Nangare, 6 weeks ago : Merge remote-tracking branch 'origin/Main' into Main
+a95192d - Indrayani Nangare, 6 weeks ago : Add Shutdown and reboot button
+0843180 - Indrayani Nangare, 6 weeks ago : Add files via upload
+5ba616f - Indrayani Nangare, 6 weeks ago : Delete Device_V0.1/proto4(testing)/images/shutdown_button.png
+767d27d - Indrayani Nangare, 6 weeks ago : Add files via upload
+4dfb2a1 - Indrayani Nangare, 6 weeks ago : Add files via upload
+6e042dd - Chetan2312, 7 weeks ago : Merge remote-tracking branch 'origin/Main' into Main
+57cc4d2 - Chetan2312, 7 weeks ago : Mesh Trial CSV UpdateCode Trial
+04696f2 - Indrayani Nangare, 7 weeks ago : Merge remote-tracking branch 'origin/Main' into Main
+b2349f4 - Indrayani Nangare, 7 weeks ago : Attach CommsManagement
+361db95 - RutvijP, 7 weeks ago : MenuMode+csv functionality
+e05f826 - RutvijP, 7 weeks ago : Merge remote-tracking branch 'origin/Main' into Main
+7a0a24a - RutvijP, 7 weeks ago : MenuMode+csv functionality
+465cbbe - Chetan2312, 7 weeks ago : Mesh Trial CSV UpdateCode Trial
+ac306d4 - Chetan2312, 7 weeks ago : Merge remote-tracking branch 'origin/Main' into Main
+ca6c335 - Chetan2312, 7 weeks ago : Mesh Trial CSV UpdateCode Trial
+a05a7b6 - RutvijP, 7 weeks ago : MenuMode addition
+acf7cc2 - RutvijP, 7 weeks ago : Merge remote-tracking branch 'origin/Main' into Main
+f6cc44d - RutvijP, 7 weeks ago : MenuMode addition
+125148c - Chetan2312, 7 weeks ago : Mesh Trial CSV UpdateCode Trial
+d3c7e8c - Chetan2312, 7 weeks ago : Mesh Trial CSV UpdateCode Trial
+09b9c2c - Chetan2312, 7 weeks ago : Mesh Trial CSV UpdateCode Trial
+c94489b - Chetan2312, 7 weeks ago : Merge remote-tracking branch 'origin/Main' into Main
+d2dd7b7 - Chetan2312, 7 weeks ago : Mesh Trial CSV UpdateCode Trial
+685537c - Rutvij Pathak, 7 weeks ago : Merge pull request #4 from epitage/3-please-add-readme-file-project-description
+eedbc79 - Prasad Phule, 7 weeks ago : added description into README
+a728907 - Chetan2312, 7 weeks ago : Mesh Trial CSV UpdateCode Trial
+3a81a6f - Chetan2312, 7 weeks ago : Mesh Trial CSV UpdateCode Trial
+e5866bd - Chetan2312, 7 weeks ago : Mesh Trial CSV UpdateCode Trial
+3a1ba51 - Chetan2312, 7 weeks ago : Merge remote-tracking branch 'origin/Main' into Main
+3ba6d3b - Chetan2312, 7 weeks ago : Mesh Trial CSV UpdateCode Trial
+edf730a - Indrayani Nangare, 8 weeks ago : Merge remote-tracking branch 'origin/Main' into Main
+be13c52 - Indrayani Nangare, 8 weeks ago : CSV file update
+b2ee90f - Indrayani Nangare, 8 weeks ago : Add files via upload
+a8b6e2b - Indrayani Nangare, 8 weeks ago : Create README.md
+bbdf61c - Chetan2312, 8 weeks ago : Removed Frame from all screens, made frameless screens.
+d831ccc - Chetan2312, 8 weeks ago : Removed Frame from all screens, made frameless screens.
+d5b08a8 - Chetan2312, 8 weeks ago : Removed Frame from all screens, made frameless screens.
+bd60387 - Chetan2312, 8 weeks ago : Merge remote-tracking branch 'origin/Main' into Main
+7490d40 - Chetan2312, 8 weeks ago : Removed Frame from all screens, made frameless screens.
+148e233 - RutvijP, 9 weeks ago : Adding AttendaceMode.py (functionality to be added)
+cb20934 - Indrayani Nangare, 9 weeks ago : commenting out combo to check ID block working
+3ce636f - Indrayani Nangare, 9 weeks ago : commenting out combo to check ID block working
+49a8d3f - Indrayani Nangare, 9 weeks ago : commenting out combo to check ID block working
+a883772 - Indrayani Nangare, 9 weeks ago : commenting out combo to check ID block working
+c8fb4a3 - Indrayani Nangare, 9 weeks ago : commenting out combo to check ID block working
+8f49b01 - Indrayani Nangare, 9 weeks ago : commenting out combo to check ID block working
+2614068 - Indrayani Nangare, 9 weeks ago : commenting out combo to check ID block working
+97b12b4 - Indrayani Nangare, 9 weeks ago : commenting out combo to check ID block working
+ca6d834 - Indrayani Nangare, 9 weeks ago : commenting out combo to check ID block working
+0db2e4f - Indrayani Nangare, 9 weeks ago : commenting out combo to check ID block working
+1a2ad73 - Indrayani Nangare, 9 weeks ago : commenting out combo to check ID block working
+f84cadc - Indrayani Nangare, 9 weeks ago : CSV file update
+8aeec84 - Indrayani Nangare, 9 weeks ago : CSV file update
+3ff8d6e - Indrayani Nangare, 9 weeks ago : CSV file update
+b8c2bf4 - Indrayani Nangare, 9 weeks ago : Merge remote-tracking branch 'origin/Main' into Main
+f2dbd32 - Indrayani Nangare, 9 weeks ago : CSV file update
+fff5e5f - Indrayani Nangare, 9 weeks ago : CSV file update
+86a7345 - Chetan2312, 9 weeks ago : data changes
+187aeb3 - Chetan2312, 9 weeks ago : Minor UI Change For TIME AND DATE Label
+7ffaf05 - Chetan2312, 9 weeks ago : Minor UI Change For TIME AND DATE Label
+74550bc - Chetan2312, 9 weeks ago : Minor UI Change For TIME AND DATE Label
+84f80f7 - Chetan2312, 9 weeks ago : Merge remote-tracking branch 'origin/Main' into Main
+1a41320 - Chetan2312, 9 weeks ago : Tried to remove window frame in epitage.py, so as to make the ui look more prompt and edge to edge
+999e068 - Indrayani Nangare, 9 weeks ago : New User
+da51bb5 - Chetan2312, 9 weeks ago : Merge remote-tracking branch 'origin/Main' into Main
+3784581 - Chetan2312, 9 weeks ago : Tried to remove window frame in epitage.py, so as to make the ui look more prompt and edge to edge
+a3dcb1c - Indrayani Nangare, 9 weeks ago : New User
+aaaea56 - Indrayani Nangare, 9 weeks ago : New User
+f0e51af - Indrayani Nangare, 9 weeks ago : Merge remote-tracking branch 'origin/Main' into Main
+22a92ec - Indrayani Nangare, 9 weeks ago : New User
+bcf0fc4 - Chetan2312, 9 weeks ago : added entire canteen menu and time slots menu to epitage.py
+0f4d38c - Chetan2312, 9 weeks ago : added entire canteen menu and time slots menu to epitage.py
+94bd2ad - Chetan2312, 9 weeks ago : added foodMenu.py and TimeSlots.py to canteen
+61ab1ed - Chetan2312, 9 weeks ago : added canteeen button to MenuScreenV4.py
+301fbe6 - Chetan2312, 9 weeks ago : proto5 for entire workflow, adding canteen and comms to proto4 working
+43ec4e9 - Chetan2312, 9 weeks ago : proto5 for entire workflow, adding canteen and comms to proto4 working
+4048274 - Indrayani Nangare, 9 weeks ago : Attach keyboard
+12cfb83 - Indrayani Nangare, 9 weeks ago : Attach keyboard
+5d911df - Chetan2312, 9 weeks ago : proto5 for entire workflow, adding canteen and comms to proto4 working
+09abfcc - Chetan2312, 9 weeks ago : Add files via upload
+9d4c217 - Chetan2312, 9 weeks ago : Add files via upload
+43e332f - Chetan2312, 9 weeks ago : Create README
+32c2731 - Chetan2312, 9 weeks ago : Delete Test-Device_V0.0
+49356a4 - Chetan2312, 9 weeks ago : Create Test-Device_V0.0
+0472b35 - Indrayani Nangare, 9 weeks ago : Attach keyboard
+b2745eb - Indrayani Nangare, 9 weeks ago : Attach keyboard
+85564d8 - Indrayani Nangare, 9 weeks ago : Attach keyboard
+219e1f6 - Chetan2312, 9 weeks ago : minor correction
+ef8d051 - Chetan2312, 9 weeks ago : minor correction
+40b4001 - Chetan2312, 9 weeks ago : minor correction
+4a1ad39 - Chetan2312, 9 weeks ago : minor correction
+9538685 - Chetan2312, 9 weeks ago : minor correction
+fd0b743 - Chetan2312, 9 weeks ago : minor correction
+8ea1417 - Chetan2312, 9 weeks ago : minor correction
+9a543a3 - Chetan2312, 9 weeks ago : minor correction
+83140b5 - Chetan2312, 9 weeks ago : minor correction
+4a59042 - Chetan2312, 9 weeks ago : minor correction to NewUserV4
+c85df67 - Chetan2312, 9 weeks ago : Merge remote-tracking branch 'origin/Main' into Main
+bc740e8 - Chetan2312, 9 weeks ago : minor correction to userverification
+8c8f09b - Chetan2312, 9 weeks ago : added csv for trial of mesh
+52807ea - Chetan2312, 9 weeks ago : Add files via upload
+d4eb3de - Chetan2312, 9 weeks ago : Delete UI-UX/Inika.zip
+f502dde - Chetan2312, 9 weeks ago : Add files via upload
+9558626 - Chetan2312, 9 weeks ago : Delete UI-UX/Font
+050a213 - Chetan2312, 9 weeks ago : Create Font
+f4ba279 - RutvijP, 9 weeks ago : csv-path
+b27c71b - RutvijP, 9 weeks ago : csv-path
+d5b83f5 - RutvijP, 9 weeks ago : Merge remote-tracking branch 'origin/Main' into Main
+a6481fb - RutvijP, 9 weeks ago : csv-path
+9acec58 - RP-raspi4, 9 weeks ago : CenteringSplash
+7132f5b - RutvijP, 9 weeks ago : date_time_centering-2
+a65eb41 - RutvijP, 9 weeks ago : date_time_centering
+277bd95 - RutvijP, 9 weeks ago : csv-path
+361ea50 - Chetan2312, 9 weeks ago : Merge remote-tracking branch 'origin/Main' into Main
+e53d966 - Chetan2312, 9 weeks ago : added csv for trial of mesh
+2cc98c8 - Indrayani Nangare, 9 weeks ago : Attach keyboard
+d11589b - Indrayani Nangare, 9 weeks ago : Attach keyboard
+c3153f0 - Indrayani Nangare, 9 weeks ago : Merge remote-tracking branch 'origin/Main' into Main
+7145191 - Indrayani Nangare, 9 weeks ago : Attach keyboard
+a091a5e - Chetan2312, 9 weeks ago : added csv for trial of mesh
+b9fa07e - Indrayani Nangare, 9 weeks ago : Merge remote-tracking branch 'origin/Main' into Main
+9e2f828 - Indrayani Nangare, 9 weeks ago : Attach keyboard
+50b9f37 - Chetan2312, 9 weeks ago : added csv for trial of mesh
+e3d7329 - Chetan2312, 9 weeks ago : added csv for trial of mesh
+d404d0c - Chetan2312, 9 weeks ago : added csv for trial of mesh
+c54b7f8 - Chetan2312, 9 weeks ago : added csv for trial of mesh
+ca5be6e - Chetan2312, 9 weeks ago : added csv for trial of mesh
+53bfe0e - Chetan2312, 9 weeks ago : added csv for trial of mesh
+a6ffda6 - Chetan2312, 9 weeks ago : added csv for trial of mesh
+eff0e5c - Chetan2312, 9 weeks ago : added csv for trial of mesh
+47d1293 - Chetan2312, 9 weeks ago : Merge remote-tracking branch 'origin/Main' into Main
+c4ff8e9 - Chetan2312, 9 weeks ago : added csv for trial of mesh
+4a4324e - Indrayani Nangare, 10 weeks ago : Attach keyboard
+9fbfd17 - Indrayani Nangare, 10 weeks ago : Attach keyboard
+eff3a2a - Indrayani Nangare, 2 months ago : Attach keyboard
+c550c74 - Indrayani Nangare, 2 months ago : Attach keyboard
+ae8e31d - Indrayani Nangare, 2 months ago : Attach keyboard
+c24267e - Indrayani Nangare, 2 months ago : Attach keyboard
+89ec05b - Indrayani Nangare, 2 months ago : Attach keyboard
+ac0d2f6 - Indrayani Nangare, 2 months ago : Attach keyboard
+be92268 - Indrayani Nangare, 2 months ago : Attach keyboard
+ddd77c3 - Indrayani Nangare, 2 months ago : Attach keyboard
+6a8473d - Indrayani Nangare, 2 months ago : Attach keyboard
+6414435 - root, 2 months ago : Merge branch 'Main' of https://github.com/epitage/Device_V0.0 into Main
+65967c3 - root, 2 months ago : 	new file:   Opencv2/__pycache__/capture_face_1.cpython-39.pyc 	new file:   Opencv2/attendance.csv 	new file:   Opencv2/attendence.py 	new file:   Opencv2/attendence_1.py 	new file:   Opencv2/attendence_2.py 	new file:   Opencv2/attendence_3.py 	new file:   Opencv2/attendence_4.py 	new file:   Opencv2/attendence_5.py 	new file:   Opencv2/capture_face.py 	new file:   Opencv2/capture_face_1.py 	new file:   Opencv2/capture_face_2.py 	new file:   Opencv2/capture_face_3.py 	new file:   Opencv2/haarcascade_frontalface_default.xml 	new file:   Opencv2/id_name_mapping.csv 	new file:   Opencv2/path.txt 	new file:   Opencv2/train_image.py 	new file:   Opencv2/trainer.yml 	new file:   Opencv2/update.txt
+d883287 - Indrayani Nangare, 2 months ago : 	modified:   Device_V0.1/proto4(testing)/epitage.py
+6631fc8 - root, 2 months ago : 	new file:   NewMesh-trial/verifyuser-rfid_4.py
+7022e5a - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+f2101f1 - Indrayani Nangare, 2 months ago : Attach keyboard
+06a1eb0 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+3e5a000 - Indrayani Nangare, 2 months ago : Attach keyboard
+1cd2a34 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+3e20505 - Indrayani Nangare, 2 months ago : Attach keyboard
+0f957c7 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+79c6040 - Indrayani Nangare, 2 months ago : Attach keyboard
+1e7101e - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+9964c69 - Indrayani Nangare, 2 months ago : Attach keyboard
+2aaf4df - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+8810949 - Indrayani Nangare, 2 months ago : Attach keyboard
+ce4723a - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+b052f0e - Indrayani Nangare, 2 months ago : Attach keyboard
+732d1ff - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+b761d62 - Indrayani Nangare, 2 months ago : Attach keyboard
+a043ffa - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+b7689e7 - Indrayani Nangare, 2 months ago : Attach keyboard
+2e52343 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+61bd90b - Indrayani Nangare, 2 months ago : Attach keyboard
+202d31d - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+05f1d8c - Indrayani Nangare, 2 months ago : Attach keyboard
+9c6da9b - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+f65aa24 - Indrayani Nangare, 2 months ago : Attach keyboard
+37016dc - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+0a8072f - Indrayani Nangare, 2 months ago : Attach keyboard
+69914af - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+e88b22a - Indrayani Nangare, 2 months ago : Attach keyboard
+c542150 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+c54e7a6 - Indrayani Nangare, 2 months ago : Attach keyboard
+6b290d6 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+74a751e - Indrayani Nangare, 2 months ago : Attach keyboard
+1abd628 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+9b00017 - Indrayani Nangare, 2 months ago : Attach keyboard
+ccc61a8 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+bfd908a - Indrayani Nangare, 2 months ago : Attach keyboard
+f210f42 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+f704bc6 - Indrayani Nangare, 2 months ago : Attach keyboard
+a99181d - Indrayani Nangare, 2 months ago : Attach keyboard
+8fa5877 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+371e55e - Indrayani Nangare, 2 months ago : Attach keyboard
+12cb3a0 - Indrayani Nangare, 2 months ago : Attach keyboard
+7c0eae6 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+7775093 - Indrayani Nangare, 2 months ago : Attach keyboard
+ec85cfa - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+fbde7fa - Indrayani Nangare, 2 months ago : Attach keyboard
+60594af - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+a06f221 - Indrayani Nangare, 2 months ago : Attach keyboard
+69a11b2 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+e0d1c77 - Indrayani Nangare, 2 months ago : Attach keyboard
+c82ff42 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+8ab7dc2 - Indrayani Nangare, 2 months ago : Attach keyboard
+efc48a3 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+954eef7 - Indrayani Nangare, 2 months ago : Attach keyboard
+d7194f9 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+3630d62 - Indrayani Nangare, 2 months ago : Attach keyboard
+cb20404 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+e937bd6 - Indrayani Nangare, 2 months ago : Attach keyboard
+3d6665e - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+c55e9a5 - Indrayani Nangare, 2 months ago : Attach keyboard
+6d58451 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+08b7066 - Indrayani Nangare, 2 months ago : Attach keyboard
+2536ee0 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+294e2e3 - Indrayani Nangare, 2 months ago : Attach keyboard
+78dbeb9 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+e1a1c4b - Indrayani Nangare, 2 months ago : Attach keyboard
+507ced2 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+15fc12d - Indrayani Nangare, 2 months ago : Attach keyboard
+d7986fa - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+58afc17 - Indrayani Nangare, 2 months ago : Attach keyboard
+c736411 - Indrayani Nangare, 2 months ago : Attach keyboard
+c103522 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+50f0fc7 - Indrayani Nangare, 2 months ago : Attach keyboard
+7414ac8 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+c6c3322 - Indrayani Nangare, 2 months ago : Attach keyboard
+55c9354 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+b5a1ff7 - Indrayani Nangare, 2 months ago : Attach keyboard
+03c6d62 - Indrayani Nangare, 2 months ago : Attach keyboard
+565b6a8 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+552c4ec - Indrayani Nangare, 2 months ago : Attach keyboard
+0b61ff3 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+b1b42fc - Indrayani Nangare, 2 months ago : Attach keyboard
+73ce83e - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+852124a - Indrayani Nangare, 2 months ago : Attach keyboard
+77682ca - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+35aedac - Indrayani Nangare, 2 months ago : Attach keyboard
+3a2a4e9 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+6985782 - Indrayani Nangare, 2 months ago : Attach keyboard
+ba9b44a - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+2566f7e - Indrayani Nangare, 2 months ago : Attach keyboard
+5e71d69 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+02e8656 - Indrayani Nangare, 2 months ago : Attach keyboard
+c4b7de6 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+d2bad73 - Indrayani Nangare, 2 months ago : Attach keyboard
+11f0e6d - Indrayani Nangare, 2 months ago : Attach keyboard
+7aa9af4 - Indrayani Nangare, 2 months ago : Attach keyboard
+686b40f - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+1b447a3 - Indrayani Nangare, 2 months ago : Attach keyboard
+3cbc483 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+989f3fe - Indrayani Nangare, 2 months ago : Attach keyboard
+3bb108c - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+e877e0f - Indrayani Nangare, 2 months ago : Attach keyboard
+6b9f04b - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+b5ae1f6 - Indrayani Nangare, 2 months ago : Attach keyboard
+ff6ea9e - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+450c7da - Indrayani Nangare, 2 months ago : Attach keyboard
+39f408f - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+8bc3cf6 - Indrayani Nangare, 2 months ago : Attach keyboard
+0e7837e - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+67cf01a - Indrayani Nangare, 2 months ago : Attach keyboard
+d749638 - root, 2 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+68f6f1f - Indrayani Nangare, 2 months ago : Attach keyboard
+2c142a4 - Indrayani Nangare, 2 months ago : Attach keyboard
+09cc64d - root, 3 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+89645e6 - Indrayani Nangare, 3 months ago : Merge remote-tracking branch 'origin/Main' into Main
+2fc0bd2 - Indrayani Nangare, 3 months ago : Attach keyboard
+c9e5206 - Chetan2312, 3 months ago : Merge remote-tracking branch 'origin/Main' into Main
+37066f2 - Chetan2312, 3 months ago : added csv for trial of mesh
+d1b3494 - Indrayani Nangare, 3 months ago : csv logic trial
+4a4e86c - Chetan2312, 3 months ago : added csv for trial of mesh
+f7b3863 - Chetan2312, 3 months ago : added csv for trial of mesh
+c9f727a - root, 3 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+a46e37f - Indrayani Nangare, 3 months ago : csv logic trial
+2f38920 - root, 3 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+9eebe85 - Indrayani Nangare, 3 months ago : csv logic trial
+83e8f16 - Indrayani Nangare, 3 months ago : csv logic trial
+f423d51 - root, 3 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+f4093ec - Indrayani Nangare, 3 months ago : csv logic trial
+bcc8303 - root, 3 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+7a584d2 - Indrayani Nangare, 3 months ago : csv logic trial
+4f7f7db - Chetan2312, 3 months ago : added csv for trial of mesh
+d58a5c9 - Chetan2312, 3 months ago : added csv for trial of mesh
+cf6624d - Chetan2312, 3 months ago : added csv for trial of mesh
+6b264cd - Chetan2312, 3 months ago : added csv for trial of mesh
+a032b3f - Chetan2312, 3 months ago : added csv for trial of mesh
+52a103c - Chetan2312, 3 months ago : added csv for trial of mesh
+b2f739b - Chetan2312, 3 months ago : added csv for trial of mesh
+1d5a15e - Chetan2312, 3 months ago : added csv for trial of mesh
+0d2eb72 - Chetan2312, 3 months ago : added csv for trial of mesh
+33b7d71 - root, 3 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+570b3c6 - Chetan2312, 3 months ago : added csv for trial of mesh
+a44fb79 - root, 3 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+ba24aec - Chetan2312, 3 months ago : added csv for trial of mesh
+8bca33e - Chetan2312, 3 months ago : added csv for trial of mesh
+c4c3eb0 - root, 3 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+1a120c2 - Chetan2312, 3 months ago : added csv for trial of mesh
+4d6fa56 - root, 3 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+389d909 - Chetan2312, 3 months ago : added csv for trial of mesh
+01fffd6 - root, 3 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+5d9d8e4 - Chetan2312, 3 months ago : added csv for trial of mesh
+01526d6 - root, 3 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+8bc3dce - Chetan2312, 3 months ago : added csv for trial of mesh
+b7eacd6 - root, 3 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+6a079f3 - Chetan2312, 3 months ago : added csv for trial of mesh
+3e028c6 - Chetan2312, 3 months ago : added csv for trial of mesh
+0a801c1 - Chetan2312, 3 months ago : added csv for trial of mesh
+8739423 - Chetan2312, 3 months ago : added csv for trial of mesh
+38a640d - Chetan2312, 3 months ago : added csv for trial of mesh
+48d9ac0 - Chetan2312, 3 months ago : added csv for trial of mesh
+9c4cbee - Chetan2312, 3 months ago : added csv for trial of mesh
+d32f714 - Chetan2312, 3 months ago : added csv for trial of mesh
+e023401 - Chetan2312, 3 months ago : added csv for trial of mesh
+48c3565 - Chetan2312, 3 months ago : added csv for trial of mesh
+0c0c650 - Chetan2312, 3 months ago : added csv for trial of mesh
+4c49c5c - Chetan2312, 3 months ago : added csv for trial of mesh
+b4aac0b - Chetan2312, 3 months ago : added csv for trial of mesh
+b2bda8d - Chetan2312, 3 months ago : added csv for trial of mesh
+563ed1c - Chetan2312, 3 months ago : added csv for trial of mesh
+1673bad - Chetan2312, 3 months ago : added csv for trial of mesh
+1c0ccf0 - root, 3 months ago : 	new file:   opencv/1_attendance.py 	new file:   opencv/attendance.csv 	new file:   opencv/attendance.py 	new file:   opencv/attendence_system.py 	new file:   opencv/attendence_system1.py 	new file:   opencv/attendence_system2.py 	new file:   opencv/attendence_system3.py 	new file:   opencv/capture_faces.py 	new file:   opencv/capture_faces_1.py 	new file:   opencv/haarcascade_frontalface_default.xml 	new file:   opencv/recognizer/trainer.yml 	new file:   opencv/train_model.py
+4aa4c47 - Chetan2312, 3 months ago : added csv for trial of mesh
+644da7a - Chetan2312, 3 months ago : added csv for trial of mesh
+30d93f5 - Chetan2312, 3 months ago : added csv for trial of mesh
+269f6bf - Chetan2312, 3 months ago : added csv for trial of mesh
+9740bbb - Chetan2312, 3 months ago : added csv for trial of mesh
+fb44056 - Chetan2312, 3 months ago : added csv for trial of mesh
+b223d44 - Chetan2312, 3 months ago : added csv for trial of mesh
+3335b18 - Chetan2312, 3 months ago : added csv for trial of mesh
+ecf1760 - Chetan2312, 3 months ago : added csv for trial of mesh
+9c3f412 - Chetan2312, 3 months ago : added csv for trial of mesh
+db09aed - Chetan2312, 3 months ago : added csv for trial of mesh
+a88b967 - Chetan2312, 3 months ago : added csv for trial of mesh
+72c12e9 - Chetan2312, 3 months ago : added csv for trial of mesh
+3dcc4b1 - Chetan2312, 3 months ago : added csv for trial of mesh
+1a762bf - Chetan2312, 3 months ago : added csv for trial of mesh
+2d3ee5e - Chetan2312, 3 months ago : added csv for trial of mesh
+54f2695 - Chetan2312, 3 months ago : added csv for trial of mesh
+81322aa - Chetan2312, 3 months ago : added csv for trial of mesh
+56f51f4 - Chetan2312, 4 months ago : added csv for trial of mesh
+242212a - Chetan2312, 4 months ago : added csv for trial of mesh
+21ab67c - Chetan2312, 4 months ago : added csv for trial of mesh
+2b690bc - Chetan2312, 4 months ago : added csv for trial of mesh
+ca9b5de - Chetan2312, 4 months ago : added csv for trial of mesh
+d0dd5b7 - Chetan2312, 4 months ago : added csv for trial of mesh
+5abc932 - Chetan2312, 4 months ago : added csv for trial of mesh
+9115a4a - Chetan2312, 4 months ago : added csv for trial of mesh
+6eb628b - Chetan2312, 4 months ago : added csv for trial of mesh
+ffb9c0d - Chetan2312, 4 months ago : added csv for trial of mesh
+3398644 - Chetan2312, 4 months ago : added csv for trial of mesh
+745b5cf - Chetan2312, 4 months ago : added csv for trial of mesh
+bba8d7a - Chetan2312, 4 months ago : added csv for trial of mesh
+a3222f0 - Chetan2312, 4 months ago : added csv for trial of mesh
+6f38f3c - Chetan2312, 4 months ago : added csv for trial of mesh
+3a4632f - Chetan2312, 4 months ago : added csv for trial of mesh
+2f2d084 - Chetan2312, 4 months ago : added csv for trial of mesh
+be215e3 - Chetan2312, 4 months ago : added csv for trial of mesh
+07ffff4 - Chetan2312, 4 months ago : added csv for trial of mesh
+2d2f5a8 - Chetan2312, 4 months ago : added csv for trial of mesh
+fd9b775 - Chetan2312, 4 months ago : added csv for trial of mesh
+5dbdcb2 - Chetan2312, 4 months ago : added csv for trial of mesh
+f7dc218 - Chetan2312, 4 months ago : added csv for trial of mesh
+3179812 - Chetan2312, 4 months ago : added csv for trial of mesh
+823abe8 - Chetan2312, 4 months ago : added csv for trial of mesh
+713b3f9 - Chetan2312, 4 months ago : added csv for trial of mesh
+dc4b801 - Chetan2312, 4 months ago : added csv for trial of mesh
+de22e9a - Chetan2312, 4 months ago : added csv for trial of mesh
+159395f - Chetan2312, 4 months ago : added csv for trial of mesh
+2d40609 - Chetan2312, 4 months ago : added csv for trial of mesh
+c51caec - Chetan2312, 4 months ago : added csv for trial of mesh
+b08806a - Chetan2312, 4 months ago : added csv for trial of mesh
+e3e20ab - Chetan2312, 4 months ago : added csv for trial of mesh
+31a8793 - Chetan2312, 4 months ago : added csv for trial of mesh
+0a97d8f - Chetan2312, 4 months ago : added csv for trial of mesh
+f13cfe1 - Chetan2312, 4 months ago : added csv for trial of mesh
+e784efb - Chetan2312, 4 months ago : added csv for trial of mesh
+87b2a31 - Chetan2312, 4 months ago : added csv for trial of mesh
+f43b2db - Chetan2312, 4 months ago : added csv for trial of mesh
+8e33002 - Chetan2312, 4 months ago : added csv for trial of mesh
+9537a23 - Chetan2312, 4 months ago : added csv for trial of mesh
+d64be27 - Chetan2312, 4 months ago : added csv for trial of mesh
+ff4b747 - Chetan2312, 4 months ago : added csv for trial of mesh
+6a03a31 - Chetan2312, 4 months ago : added csv for trial of mesh
+eaa1c1b - Chetan2312, 4 months ago : added csv for trial of mesh
+f8c211a - Chetan2312, 4 months ago : added csv for trial of mesh
+7528bf1 - Chetan2312, 4 months ago : added csv for trial of mesh
+08c7d34 - Chetan2312, 4 months ago : added csv for trial of mesh
+be4daf9 - Chetan2312, 4 months ago : added csv for trial of mesh
+93454f5 - Chetan2312, 4 months ago : added csv for trial of mesh
+7ebb7a7 - Chetan2312, 4 months ago : added csv for trial of mesh
+c4a71b7 - Chetan2312, 4 months ago : added csv for trial of mesh
+2097c01 - Chetan2312, 4 months ago : added csv for trial of mesh
+f5f5c88 - Chetan2312, 4 months ago : added csv for trial of mesh
+6553b88 - Chetan2312, 4 months ago : added csv for trial of mesh
+3bc8128 - Chetan2312, 4 months ago : added csv for trial of mesh
+6945247 - Chetan2312, 4 months ago : added csv for trial of mesh
+c733152 - Chetan2312, 4 months ago : added csv for trial of mesh
+f57b2fa - Chetan2312, 4 months ago : added csv for trial of mesh
+922d0e3 - Chetan2312, 4 months ago : added csv for trial of mesh
+707b7c8 - Chetan2312, 4 months ago : added csv for trial of mesh
+c63bd34 - Chetan2312, 4 months ago : added csv for trial of mesh
+7bdac0c - Chetan2312, 4 months ago : added csv for trial of mesh
+b8e62a1 - Chetan2312, 4 months ago : 	modified:   users1.csv
+2fc8d5f - Chetan2312, 4 months ago : added csv for trial of mesh
+0846057 - Chetan2312, 4 months ago : added csv for trial of mesh
+a61c1fa - Chetan2312, 4 months ago : added csv for trial of mesh
+3716ea7 - Chetan2312, 4 months ago : added csv for trial of mesh
+d865ce8 - Chetan2312, 4 months ago : added csv for trial of mesh
+7b461fb - Chetan2312, 4 months ago : added csv for trial of mesh
+bd7e2b2 - Chetan2312, 4 months ago : added csv for trial of mesh
+b442bf0 - Chetan2312, 4 months ago : added csv for trial of mesh
+b723b13 - Chetan2312, 4 months ago : added csv for trial of mesh
+ed3fd68 - Chetan2312, 4 months ago : added csv for trial of mesh
+576e58d - Chetan2312, 4 months ago : added csv for trial of mesh
+6e213ac - Chetan2312, 4 months ago : added csv for trial of mesh
+633f954 - Chetan2312, 4 months ago : added csv for trial of mesh
+661909d - Chetan2312, 4 months ago : added csv for trial of mesh
+c4870bc - Chetan2312, 4 months ago : added csv for trial of mesh
+af7cab6 - Chetan2312, 4 months ago : added csv for trial of mesh
+80f4229 - Chetan2312, 4 months ago : added csv for trial of mesh
+b0b3fe9 - Indrayani Nangare, 4 months ago : csv logic trial
+3ce1d8c - RutvijP, 4 months ago : CanteenModule-test3
+2d782ad - RutvijP, 4 months ago : CanteenModule-test2
+8072951 - RutvijP, 4 months ago : Merge remote-tracking branch 'origin/Main' into Main
+113f67d - RutvijP, 4 months ago : CanteenModule test
+0a2e55c - Chetan2312, 4 months ago : Changes in 14-py-mesh_rfid.py
+12f9f56 - Chetan2312, 4 months ago : Changes in 14-py-mesh_rfid.py
+dcc9d7b - Chetan2312, 4 months ago : Changes in 14-py-mesh_rfid.py
+3494a9d - Chetan2312, 4 months ago : Changes in 14-py-mesh_rfid.py
+bc06adf - Chetan2312, 4 months ago : Changes in 14-py-mesh_rfid.py
+ff200eb - Chetan2312, 4 months ago : Changes in 14-py-mesh_rfid.py
+5e7a008 - Chetan2312, 4 months ago : Changes in 14-py-mesh_rfid.py
+a093435 - Chetan2312, 4 months ago : Changes in 14-py-mesh_rfid.py
+ec9f95d - Chetan2312, 4 months ago : Changes in 14-py-mesh_rfid.py
+7374046 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+d86a649 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+6008951 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+16ecdca - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+9a902aa - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+4817c0e - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+81955e0 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+f3b5f5c - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+2062c30 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+77ddcce - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+92c472b - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+3ba7129 - Chetan2312, 4 months ago : Merge remote-tracking branch 'origin/Main' into Main
+0ef5f7c - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+335d720 - Chetan2312, 4 months ago : Adding users1.csv to mesh
+0de2157 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+ba48c5d - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+488acea - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+6e36bd3 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+17ca0a7 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+495a494 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+b2cacca - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+673603b - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+634804e - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+cf9a4c1 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+c1f205d - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+3196330 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+aa21611 - Chetan2312, 4 months ago : reverted old working proto3 + mesh folder push
+19fe700 - Chetan2312, 4 months ago : 	modified:   Device_Firmware/mesh/10-py-mesh.py 	Device_Firmware/mesh/.12-py-mesh.py.swp 	Device_Firmware/mesh/11-py-mesh.py 	Device_Firmware/mesh/12-py-mesh.py 	Device_Firmware/mesh/13-py-mesh.py 	Device_Firmware/mesh/14-py-mesh_rfid.py 	Device_V0.1/proto3/
+1f07560 - Chetan2312, 4 months ago : 	deleted:    Device_V0.1/proto3/MenuScreenV4.py 	deleted:    Device_V0.1/proto3/NewUserV3.py 	deleted:    Device_V0.1/proto3/UserMenu.py 	deleted:    Device_V0.1/proto3/UserModule/.NewUser1.py.swp 	deleted:    Device_V0.1/proto3/UserModule/.NewUserV2.py.swp 	deleted:    Device_V0.1/proto3/UserModule/NewUser.py 	deleted:    Device_V0.1/proto3/UserModule/NewUser1.py 	deleted:    Device_V0.1/proto3/UserModule/NewUserV2.py 	deleted:    Device_V0.1/proto3/UserModule/__init__.py 	deleted:    Device_V0.1/proto3/UserModule/__pycache__/NewUser.cpython-39.pyc 	deleted:    Device_V0.1/proto3/UserModule/__pycache__/NewUser1.cpython-39.pyc 	deleted:    Device_V0.1/proto3/UserModule/__pycache__/NewUserV2.cpython-39.pyc 	deleted:    Device_V0.1/proto3/UserModule/__pycache__/__init__.cpython-39.pyc 	deleted:    Device_V0.1/proto3/__init__.py 	deleted:    Device_V0.1/proto3/__pycache__/MenuScreenV4.cpython-39.pyc 	deleted:    Device_V0.1/proto3/__pycache__/NewUserV3.cpython-39.pyc 	deleted:    Device_V0.1/proto3/__pycache__/NewUserV4.cpython-39.pyc 	deleted:    Device_V0.1/proto3/__pycache__/UserMenu.cpython-39.pyc 	deleted:    Device_V0.1/proto3/__pycache__/epitage.cpython-39.pyc 	deleted:    Device_V0.1/proto3/__pycache__/fps.cpython-39.pyc 	deleted:    Device_V0.1/proto3/__pycache__/keyboard3.cpython-39.pyc 	deleted:    Device_V0.1/proto3/__pycache__/settings.cpython-39.pyc 	deleted:    Device_V0.1/proto3/__pycache__/splashscreenv4.cpython-39.pyc 	deleted:    Device_V0.1/proto3/__pycache__/userverification.cpython-39.pyc 	deleted:    Device_V0.1/proto3/__pycache__/virtualkeyboard.cpython-39.pyc 	deleted:    Device_V0.1/proto3/data/EmpMaster-Epitage.csv 	deleted:    Device_V0.1/proto3/data/emp-photos/1.jpg 	deleted:    Device_V0.1/proto3/data/emp-photos/10.jpg 	deleted:    Device_V0.1/proto3/data/emp-photos/2.jpg 	deleted:    Device_V0.1/proto3/data/emp-photos/3.jpg 	deleted:    Device_V0.1/proto3/data/emp-photos/4.jpg 	deleted:    Device_V0.1/proto3/data/emp-photos/5.jpg 	deleted:    Device_V0.1/proto3/data/emp-photos/6.jpg 	deleted:    Device_V0.1/proto3/data/emp-photos/7.jpg 	deleted:    Device_V0.1/proto3/data/emp-photos/715000043.jpg 	deleted:    Device_V0.1/proto3/data/emp-photos/8.jpg 	deleted:    Device_V0.1/proto3/data/emp-photos/9.jpg 	deleted:    Device_V0.1/proto3/epitage.py 	deleted:    Device_V0.1/proto3/fps.py 	deleted:    Device_V0.1/proto3/hw_firmware/NewUser.py 	deleted:    Device_V0.1/proto3/hw_firmware/SimpleMFRC522.py 	deleted:    Device_V0.1/proto3/hw_firmware/mfrc522-test/MFRC522.py 	deleted:    Device_V0.1/proto3/hw_firmware/mfrc522-test/SimpleMFRC522.py 	deleted:    Device_V0.1/proto3/hw_firmware/mfrc522-test/__init__.py 	deleted:    Device_V0.1/proto3/hw_firmware/mfrc522-test/rfid-test.py 	deleted:    Device_V0.1/proto3/hw_firmware/read.py 	deleted:    Device_V0.1/proto3/hw_firmware/write.py 	deleted:    Device_V0.1/proto3/images/EpitageLogo_final.png 	deleted:    Device_V0.1/proto3/images/background.png 	deleted:    Device_V0.1/proto3/images/icons/BackIcon.png 	deleted:    Device_V0.1/proto3/images/icons/CommIcon.png 	deleted:    Device_V0.1/proto3/images/icons/CopyUserIcon.png 	deleted:    Device_V0.1/proto3/images/icons/DeleteUserIcon.png 	deleted:    Device_V0.1/proto3/images/icons/DeviceIcon.png 	deleted:    Device_V0.1/proto3/images/icons/EditUserIcon.png 	deleted:    Device_V0.1/proto3/images/icons/LogIcon.png 	deleted:    Device_V0.1/proto3/images/icons/MenuIcon.png 	deleted:    Device_V0.1/proto3/images/icons/NewUserIcon.png 	deleted:    Device_V0.1/proto3/images/icons/RFIDcard.png 	deleted:    Device_V0.1/proto3/images/icons/UserIcon.png 	deleted:    Device_V0.1/proto3/images/icons/UserVerifyIcon.png 	deleted:    Device_V0.1/proto3/images/icons/facebtn.png 	deleted:    Device_V0.1/proto3/images/icons/fingerbtn.png 	deleted:    Device_V0.1/proto3/images/icons/printerIcon.png 	deleted:    Device_V0.1/proto3/images/img.png 	deleted:    Device_V0.1/proto3/images/placeholderImg.png 	deleted:    Device_V0.1/proto3/keyboard3.py 	deleted:    Device_V0.1/proto3/scratches/MenuGrid_V2.py 	deleted:    Device_V0.1/proto3/scratches/splashtest.py 	deleted:    Device_V0.1/proto3/scratches/theme.py 	deleted:    Device_V0.1/proto3/scratches/timeutil.py 	deleted:    Device_V0.1/proto3/settings.py 	deleted:    Device_V0.1/proto3/userverification.py 	deleted:    Device_V0.1/proto3/utilities/__init__.py 	deleted:    Device_V0.1/proto3/utilities/__pycache__/__init__.cpython-39.pyc 	deleted:    Device_V0.1/proto3/utilities/__pycache__/components.cpython-39.pyc 	deleted:    Device_V0.1/proto3/utilities/__pycache__/themeV3.cpython-39.pyc 	deleted:    Device_V0.1/proto3/utilities/components.py 	deleted:    Device_V0.1/proto3/utilities/themeV3.py 	deleted:    Device_V0.1/proto3/virtualkeyboard.py
+1d25c10 - Chetan2312, 4 months ago : Merge remote-tracking branch 'origin/Main' into Main
+f7723da - Chetan2312, 4 months ago : Initial commit with latest files from GitHub
+0371dfc - Chetan2312, 4 months ago : 	new file:   10-py-mesh.py 	new file:   4-py-mesh.py 	new file:   5-py-mesh.py 	new file:   6-py-mesh.py 	new file:   7-py-mesh.py 	new file:   8-py-mesh.py 	new file:   9-py-mesh.py 	new file:   received_data.csv 	modified:   ../../Device_V0.1/proto1/__pycache__/AddUser_Working.cpython-39.pyc 	modified:   ../../Device_V0.1/proto1/__pycache__/EditUser.cpython-39.pyc 	modified:   ../../Device_V0.1/proto1/__pycache__/MenuGrid.cpython-39.pyc 	modified:   ../../Device_V0.1/proto1/__pycache__/UserMain_Final.cpython-39.pyc 	modified:   ../../Device_V0.1/proto1/__pycache__/ViewUser_Working.cpython-39.pyc 	modified:   ../../Device_V0.1/proto1/__pycache__/cardverification.cpython-39.pyc 	modified:   ../../Device_V0.1/proto1/__pycache__/keyboard.cpython-39.pyc 	modified:   ../../Device_V0.1/proto1/__pycache__/theme.cpython-39.pyc 	modified:   ../../Device_V0.1/proto1/__pycache__/topband.cpython-39.pyc 	modified:   ../../Device_V0.1/proto3/__pycache__/MenuScreenV4.cpython-39.pyc 	modified:   ../../Device_V0.1/proto3/__pycache__/NewUserV3.cpython-39.pyc 	modified:   ../../Device_V0.1/proto3/__pycache__/UserMenu.cpython-39.pyc 	modified:   ../../Device_V0.1/proto3/__pycache__/userverification.cpython-39.pyc 	modified:   ../../Device_V0.1/proto3/utilities/__pycache__/themeV3.cpython-39.pyc
+cdd4eaf - RutvijP, 4 months ago : keyboard-additon-check
+a5d099f - RutvijP, 4 months ago : keyboard-additon-check
+f27d3b8 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+8b82cb9 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+6f53a2e - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+a7a8515 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+a64601f - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+358184e - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+215b382 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+7570186 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+930a598 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+2f09b99 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+3608d88 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+c40710e - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+dcfbb7c - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+513bff9 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+5cf9637 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+b477f86 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+5ea5b8d - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+3caa589 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+718fae7 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+b6194b9 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+fa5d2c4 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+a2e9c09 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+26b1acb - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+ce4d9ae - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+ee8d443 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+7d71d1c - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+f7a3cdc - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+86d12e6 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+454129f - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+9eda581 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+fed3f77 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+11c464f - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+e120820 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+8757176 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+068c466 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+f4d2ed5 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+9babf7b - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+d43aa8a - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+ba831a8 - Chetan2312, 4 months ago : Merge remote-tracking branch 'origin/Main' into Main
+35645b4 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+0c36607 - RutvijP, 4 months ago : functioning ok
+3037a98 - RutvijP, 4 months ago : keyboardtest5
+16323df - RutvijP, 4 months ago : keyboardtest2
+52c6e46 - RutvijP, 4 months ago : keyboardtest2
+c7b9fc7 - RutvijP, 4 months ago : keyboardtest
+1df38c5 - RutvijP, 4 months ago : test -ok fo MenuScreen
+47c1e3a - RutvijP, 4 months ago : refactor- deleting bad file
+592eef2 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+ba82b3b - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+1161b7e - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+5902002 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+9211cb0 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+baee4b1 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+c9c92ca - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+aa11482 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+ce40a76 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+c8d9902 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+7c624a9 - Chetan2312, 4 months ago : Added RFID to rfidcardbtn
+2c31c07 - RutvijP, 4 months ago : changesv3
+f4534c8 - RutvijP, 4 months ago : changesv2-keyboardworking
+c705e94 - Chetan2312, 4 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+b216e93 - Chetan2312, 4 months ago : 	Device_V0.1/proto3/__pycache__/virtualkeyboard.cpython-39.pyc 	UI-UX/V3_Testing/keyboard-capslock.py 	UI-UX/V3_Testing/keyboard-capslock1.py
+0278559 - RutvijP, 4 months ago : changesv1
+79abe5f - Chetan2312, 4 months ago : 	new file:   Device_Firmware/mesh/.2-py-mesh.py.swp 	new file:   Device_Firmware/mesh/1-py-mesh.py 	new file:   Device_Firmware/mesh/2-py-mesh.py 	new file:   Device_Firmware/mesh/3-py-mesh.py 	new file:   Device_Firmware/mesh/py-mesh.py 	modified:   Device_V0.1/proto2/MenuGrid_V2.py 	modified:   Device_V0.1/proto2/__pycache__/AddUser_Working.cpython-39.pyc 	modified:   Device_V0.1/proto2/__pycache__/EditUser.cpython-39.pyc 	modified:   Device_V0.1/proto2/__pycache__/MenuGrid_V2.cpython-39.pyc 	modified:   Device_V0.1/proto2/__pycache__/UserMain_Final.cpython-39.pyc 	modified:   Device_V0.1/proto2/__pycache__/ViewUser_Working_V2.cpython-39.pyc 	modified:   Device_V0.1/proto2/__pycache__/cardverification.cpython-39.pyc 	modified:   Device_V0.1/proto2/__pycache__/theme.cpython-39.pyc 	modified:   Device_V0.1/proto2/__pycache__/topband_V2.cpython-39.pyc 	new file:   Device_V0.1/proto2/__pycache__/virtualkeyboard.cpython-39.pyc 	modified:   Device_V0.1/proto2/old-working-programs/MenuGrid_V2.py 	new file:   Device_V0.1/proto2/virtualkeyboard.py 	modified:   Device_V0.1/proto3/__pycache__/MenuScreenV4.cpython-39.pyc 	modified:   Device_V0.1/proto3/__pycache__/UserMenu.cpython-39.pyc 	modified:   Device_V0.1/proto3/__pycache__/splashscreenv4.cpython-39.pyc 	modified:   Device_V0.1/proto3/utilities/__pycache__/__init__.cpython-39.pyc 	modified:   Device_V0.1/proto3/utilities/__pycache__/components.cpython-39.pyc 	new file:   Device_V0.1/proto3/virtualkeyboard.py 	modified:   UI-UX/V3_Testing/keyboard-small-2.py
+b9e4514 - RutvijP, 4 months ago : debugging6
+f82df7e - RutvijP, 4 months ago : debugging5
+d350779 - RutvijP, 4 months ago : debugging4
+a84fa0f - RutvijP, 4 months ago : debugging3
+cf78e9c - RutvijP, 4 months ago : double-cursor-debug-3
+43ff6c8 - RutvijP, 4 months ago : double-cursor-debug-2
+0846590 - RutvijP, 4 months ago : double-cursor-debug
+e0797db - RutvijP, 4 months ago : matchbox-test-4
+5976949 - RutvijP, 4 months ago : matchbox-test-3
+b5c4c9e - RutvijP, 4 months ago : matchbox-test-2
+8f5a7c8 - RutvijP, 4 months ago : Merge remote-tracking branch 'origin/Main' into Main
+50400d8 - RutvijP, 4 months ago : matchbox-test
+89a9e3d - Chetan2312, 4 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+09bbf58 - Chetan2312, 4 months ago : 	new file:   Device_Firmware/GT521F52/deletefps.py 	new file:   Device_Firmware/network-parameters/networkUI.py 	new file:   Device_Firmware/network-parameters/wifi-UI.py 	new file:   Device_Firmware/network-parameters/wifi-ethernetUI.py 	new file:   Device_V0.1/proto1/src/mfrc522-test/__pycache__/MFRC522.cpython-39.pyc 	modified:   Device_V0.1/proto2/users.csv 	modified:   Device_V0.1/proto3/NewUserV4.py 	modified:   Device_V0.1/proto3/UserMenu.py 	modified:   Device_V0.1/proto3/__pycache__/NewUserV4.cpython-39.pyc 	modified:   Device_V0.1/proto3/__pycache__/UserMenu.cpython-39.pyc 	modified:   Device_V0.1/proto3/__pycache__/splashscreenv4.cpython-39.pyc 	modified:   Device_V0.1/proto3/__pycache__/userverification.cpython-39.pyc 	modified:   Device_V0.1/proto3/splashscreenv4.py 	modified:   Device_V0.1/proto3/userverification.py
+38b315f - RutvijP, 4 months ago : requirements file
+328c7d7 - RutvijP, 4 months ago : keyboard-testing-4
+3630273 - RutvijP, 4 months ago : keyboard-testing-4
+0f921da - RutvijP, 5 months ago : keyboard-testing-3
+8cc9342 - RutvijP, 5 months ago : keyboard-testing-2
+95b538e - RutvijP, 5 months ago : keyboard-testing
+99f52d7 - Chetan2312, 5 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+b7ccdb2 - Chetan2312, 5 months ago : 	new file:   NewUserV4.py 	modified:   UserMenu.py
+bd54024 - RutvijP, 5 months ago : minor-correction-v7
+c7731e3 - RutvijP, 5 months ago : minor-correction-v6
+dcbade9 - RutvijP, 5 months ago : minor-correction-v5+card verification
+a435f93 - RutvijP, 5 months ago : minor-correction-v4
+d444674 - Chetan2312, 5 months ago : 	new file:   userverification.py
+abb2dbd - Chetan2312, 5 months ago : 	new file:   fingerverify.py
+814b848 - Chetan2312, 5 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+096af01 - RutvijP, 5 months ago : minor-correction-v3
+c888cb2 - Chetan2312, 5 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+9d8dd66 - RutvijP, 5 months ago : minor-correction-v2
+c48478a - Chetan2312, 5 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+1ad663b - Chetan2312, 5 months ago : 	modified:   Device_V0.1/proto3/splashscreenv4.py
+dd44cfc - RutvijP, 5 months ago : minor-correction
+d01a180 - RutvijP, 5 months ago : Testing_Piagioo-V3
+404fe7f - RutvijP, 5 months ago : Testing_Piagioo-V2
+dd39819 - RutvijP, 5 months ago : Testing_Piagioo
+aba6e01 - RutvijP, 5 months ago : prototype-testing
+b393bc1 - RutvijP, 5 months ago : keyboard-testing
+80691dd - RutvijP, 5 months ago : V4 (CURRENT WORKING DIRECTORY)
+4016a9a - Chetan2312, 6 months ago : 	modified:   Device_V0.1/proto2/MenuGrid_V2.py 	modified:   Device_V0.1/proto2/UserMain_Final.py 	modified:   Device_V0.1/proto2/__pycache__/MenuGrid_V2.cpython-39.pyc 	modified:   Device_V0.1/proto2/__pycache__/UserMain_Final.cpython-39.pyc 	new file:   Device_V0.1/proto2/__pycache__/keyboard.cpython-39.pyc 	new file:   Device_V0.1/proto2/keyboard.py
+0807d31 - Chetan2312, 6 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+08b6c90 - Chetan2312, 6 months ago : 	new file:   Device_V0.1/proto2/AddUser_Working.py 	new file:   Device_V0.1/proto2/EditUser.py 	new file:   Device_V0.1/proto2/Epitage.png 	new file:   Device_V0.1/proto2/MenuGrid_V2.py 	new file:   Device_V0.1/proto2/UserMain_Final.py 	new file:   Device_V0.1/proto2/UserReg.png 	new file:   Device_V0.1/proto2/ViewUser_Working_V2.py 	new file:   Device_V0.1/proto2/__pycache__/AddUser_Working.cpython-39.pyc 	new file:   Device_V0.1/proto2/__pycache__/EditUser.cpython-39.pyc 	new file:   Device_V0.1/proto2/__pycache__/MenuGrid_V2.cpython-39.pyc 	new file:   Device_V0.1/proto2/__pycache__/UserMain_Final.cpython-39.pyc 	new file:   Device_V0.1/proto2/__pycache__/ViewUser_Working_V2.cpython-39.pyc 	new file:   Device_V0.1/proto2/__pycache__/splashscreen_V2.cpython-39.pyc 	new file:   Device_V0.1/proto2/__pycache__/theme.cpython-39.pyc 	new file:   Device_V0.1/proto2/__pycache__/topband_V2.cpython-39.pyc 	new file:   Device_V0.1/proto2/card-password.py 	new file:   Device_V0.1/proto2/cardverification.py 	new file:   Device_V0.1/proto2/data/EmpMaster-Epitage.csv 	new file:   Device_V0.1/proto2/error.txt 	new file:   Device_V0.1/proto2/images/epitage.jpg 	new file:   Device_V0.1/proto2/images/ethos.jpg 	new file:   Device_V0.1/proto2/images/ethos.png 	new file:   Device_V0.1/proto2/images/gsk.jpg 	new file:   Device_V0.1/proto2/images/test.gif 	new file:   Device_V0.1/proto2/images/userMainCrd.jpg 	new file:   Device_V0.1/proto2/images/userMainFace.jpg 	new file:   Device_V0.1/proto2/images/userMainThumb.jpg 	new file:   Device_V0.1/proto2/move-original-code/MenuGrid_V2.py 	new file:   Device_V0.1/proto2/splashscreen_V2.py 	new file:   Device_V0.1/proto2/src/1-card-verification-ui.py 	new file:   Device_V0.1/proto2/src/AddUser_Working.py 	new file:   Device_V0.1/proto2/src/SimpleMFRC522.py 	new file:   Device_V0.1/proto2/src/adduser-rfid-restrict-duplpication.py 	new file:   Device_V0.1/proto2/src/adduser-rfid.py 	new file:   Device_V0.1/proto2/src/keyboard-UI.py 	new file:   Device_V0.1/proto2/src/mfrc522-test/MFRC522.py 	new file:   Device_V0.1/proto2/src/mfrc522-test/SimpleMFRC522.py 	new file:   Device_V0.1/proto2/src/mfrc522-test/__init__.py 	new file:   Device_V0.1/proto2/src/mfrc522-test/rfid-test.py 	new file:   Device_V0.1/proto2/src/rfiduserui.py 	new file:   Device_V0.1/proto2/src/users.csv 	new file:   Device_V0.1/proto2/src/users1.csv 	new file:   Device_V0.1/proto2/src/verifyuser-rfid.py 	new file:   Device_V0.1/proto2/svgfiles/cardverify.svg 	new file:   Device_V0.1/proto2/svgfiles/user.svg 	new file:   Device_V0.1/proto2/theme.py 	new file:   Device_V0.1/proto2/topband_V2.py 	new file:   Device_V0.1/proto2/users.csv
+c8826c7 - RutvijP, 6 months ago : V3-testing
+b829a40 - RutvijP, 6 months ago : V2-Update for Friday Demo.
+9ba08ed - RutvijP, 6 months ago : V2-Update for Friday Demo.
+872c6e6 - RutvijP, 6 months ago : V2-Files to pulled into the proto1folder
+8e6ac90 - RutvijP, 6 months ago : splashscreen-finalization
+165f4d6 - Rutvij Pathak, 6 months ago : Update MenuGrid.py
+d62648a - RutvijP, 6 months ago : edit3
+b26f2dd - RutvijP, 6 months ago : edit2
+99ca143 - RutvijP, 6 months ago : edit
+29e98c3 - RutvijP, 6 months ago : editing
+c5eb50e - RutvijP, 6 months ago : back button addition
+1721a4e - Chetan2312, 6 months ago : 	modified:   ../../../Device_V0.1/proto1/AddUser_Working.py 	modified:   ../../../Device_V0.1/proto1/MenuGrid.py 	modified:   ../../../Device_V0.1/proto1/ViewUser_Working.py 	modified:   ../../../Device_V0.1/proto1/__pycache__/MenuGrid.cpython-39.pyc 	modified:   ../../../Device_V0.1/proto1/__pycache__/ViewUser_Working.cpython-39.pyc 	modified:   ../../../Device_V0.1/proto1/move_previous_code_before-test/AddUser_Working.py 	modified:   ../../../Device_V0.1/proto1/users.csv 	modified:   MenuGrid.py 	modified:   cardverification.py
+b52ef2d - Chetan2312, 6 months ago : 	modified:   Device_V0.1/proto1/AddUser_Working.py 	new file:   Device_V0.1/proto1/src/AddUser_Working.py
+45bee7b - Chetan2312, 6 months ago : 	modified:   AddUser_Working.py
+19b7b5e - Chetan2312, 6 months ago : 	modified:   userfingerui_rutvij.py
+4537b9e - RutvijP, 6 months ago : fingertest
+f1e21ea - Chetan2312, 6 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+5158979 - Chetan2312, 6 months ago : 	new file:   .1-userinfgerui.py.swp 	new file:   1-userinfgerui.py 	new file:   fingerui.py 	new file:   userfingerui.py
+a08debd - RutvijP, 6 months ago : UI Textboxes working in DesktopPrototype
+7e3734d - RutvijP, 6 months ago : Cleanup + Addition of Desktop prototype for computer only testing
+a5cc2ce - RutvijP, 6 months ago : New screen addition (splash + menu + user reg + card verification) + housekeeping.
+b724612 - RutvijP, 6 months ago : keyboard addition + housekeeping
+e2a1df6 - Chetan2312, 6 months ago : 	deleted:    Device_V0.1/proto1/.AddUser_Working.py.swp 	deleted:    Device_V0.1/proto1/epitage.csv 	deleted:    Device_V0.1/proto1/move-files/AddUser_Working.py 	deleted:    Device_V0.1/proto1/src/AddUser_Working.py 	deleted:    Device_V0.1/proto1/src/keyboardtrial.py 	deleted:    Device_V0.1/proto1/src/read.py 	deleted:    Device_V0.1/proto1/src/rfidui1.py 	deleted:    Device_V0.1/proto1/src/ui-verify.py 	deleted:    Device_V0.1/proto1/src/write.py 	deleted:    Device_V0.1/proto1/user1.csv
+f30bfa1 - Chetan2312, 6 months ago : 	new file:   Device_V0.1/proto1/src/keyboard-UI.py
+7e8bdb8 - Chetan2312, 6 months ago : 	renamed:    Device_V0.1/proto1/src/card-verification-ui.py -> Device_V0.1/proto1/src/1-card-verification-ui.py 	new file:   Device_V0.1/proto1/src/adduser-rfid-restrict-duplpication.py 	deleted:    Device_V0.1/proto1/src/user1.csv 	modified:   Device_V0.1/proto1/src/users1.csv 	modified:   Device_V0.1/proto1/users.csv
+a9ff584 - RutvijP, 6 months ago : matchbox-keyboard-test
+bbb1e1b - Chetan2312, 6 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+4503480 - Chetan2312, 6 months ago : 	new file:   Device_V0.1/proto1/src/card-verification-ui.py
+eb2f243 - SharmadG, 6 months ago : Entire UserMain_Working.py has been designed according to excel
+5cb3826 - SharmadG, 6 months ago : Merge remote-tracking branch 'origin/Main' into Main
+fb326fb - SharmadG, 6 months ago : color change done in theme.py top band added to splashscreen.py UserMain_Working.py entire form updated and working
+fbe9d4d - SharmadG, 6 months ago : Add files via upload
+949a8c3 - SharmadG, 6 months ago : Add files via upload
+4537e6a - SharmadG, 6 months ago : Alignment correction done
+7f7acf2 - SharmadG, 6 months ago : Add files via upload
+67c040d - Rudy, 6 months ago : Update createdb.py
+9e20be2 - SharmadG, 6 months ago : ViewUser_Working.py connection back to UserMain_Working.py
+44a7164 - Chetan2312, 7 months ago : 	modified:   Device_V0.1/proto1/AddUser_Working.py 	modified:   Device_V0.1/proto1/ViewUser_Working.py 	modified:   Device_V0.1/proto1/__pycache__/AddUser_Working.cpython-39.pyc 	modified:   Device_V0.1/proto1/__pycache__/EditUser.cpython-39.pyc 	modified:   Device_V0.1/proto1/__pycache__/ViewUser_Working.cpython-39.pyc 	modified:   Device_V0.1/proto1/src/users.csv 	modified:   Device_V0.1/proto1/src/verifyuser-rfid.py 	new file:   Device_V0.1/proto1/user1.csv 	modified:   Device_V0.1/proto1/users.csv
+a6149aa - Chetan2312, 7 months ago : 	modified:   AddUser_Working.py
+13882fe - Chetan2312, 7 months ago : 	new file:   Device_V0.1/proto1/__pycache__/AddUser_Working.cpython-39.pyc 	new file:   Device_V0.1/proto1/__pycache__/EditUser.cpython-39.pyc 	new file:   Device_V0.1/proto1/__pycache__/MenuGrid.cpython-39.pyc 	new file:   Device_V0.1/proto1/__pycache__/UserMain_Working.cpython-39.pyc 	new file:   Device_V0.1/proto1/__pycache__/ViewUser_Working.cpython-39.pyc 	new file:   Device_V0.1/proto1/__pycache__/theme.cpython-39.pyc 	new file:   Device_V0.1/proto1/__pycache__/topband.cpython-39.pyc 	new file:   Device_V0.1/proto1/src/.rfiduserui.py.swp 	new file:   Device_V0.1/proto1/src/adduser-rfid.py 	deleted:    Device_V0.1/proto1/src/readRFID.py 	new file:   Device_V0.1/proto1/src/rfidui1.py 	new file:   Device_V0.1/proto1/src/rfiduserui.py 	new file:   Device_V0.1/proto1/src/users.csv 	new file:   Device_V0.1/proto1/src/users1.csv 	new file:   Device_V0.1/proto1/src/verifyuser-rfid.py 	deleted:    Device_V0.1/proto1/src/writeRFID.py 	modified:   Device_V0.1/proto1/users.csv
+ca7e5d0 - RutvijP, 7 months ago : Setting the RFID number to the card number
+234c749 - Chetan2312, 7 months ago : 	new file:   Device_V0.1/proto1/AddUser_Working.py
+398f3e5 - RutvijP, 7 months ago : Indentation-error removed with deletion of fingerprint
+9303a04 - Chetan2312, 7 months ago : 	new file:   Device_Firmware/pi-rfid/RFIDDummy.py 	new file:   Device_Firmware/pi-rfid/RFIDDummy.py.save 	new file:   Device_Firmware/pi-rfid/error-int.txt 	new file:   Device_Firmware/pi-rfid/rfid-19032023.py 	new file:   Device_V0.1/proto1/AddUserWorking.py 	new file:   Device_V0.1/proto1/EditUser.py 	new file:   Device_V0.1/proto1/Epitage.png 	new file:   Device_V0.1/proto1/MenuGrid.py 	new file:   Device_V0.1/proto1/UserMain_Working.py 	new file:   Device_V0.1/proto1/UserReg.png 	new file:   Device_V0.1/proto1/ViewUser_Working.py 	new file:   Device_V0.1/proto1/splashscreen.py 	new file:   Device_V0.1/proto1/src/MFRC522/MFRC522-python 	new file:   Device_V0.1/proto1/src/MFRC522/SPI-Py 	new file:   Device_V0.1/proto1/src/SimpleMFRC522.py 	new file:   Device_V0.1/proto1/src/mfrc522-test/MFRC522.py 	new file:   Device_V0.1/proto1/src/mfrc522-test/SimpleMFRC522.py 	new file:   Device_V0.1/proto1/src/mfrc522-test/__init__.py 	new file:   Device_V0.1/proto1/src/mfrc522-test/rfid-test.py 	new file:   Device_V0.1/proto1/src/read.py 	new file:   Device_V0.1/proto1/src/readRFID.py 	new file:   Device_V0.1/proto1/src/write.py 	new file:   Device_V0.1/proto1/src/writeRFID.py 	new file:   Device_V0.1/proto1/sudarshanlogo.png 	new file:   Device_V0.1/proto1/theme.py 	new file:   Device_V0.1/proto1/topband.py 	new file:   Device_V0.1/proto1/users.csv 	new file:   UI-UX/Ui_Testing/RFID-UI-Test/MFRC522.py 	new file:   UI-UX/Ui_Testing/RFID-UI-Test/MFRC522/MFRC522-python 	new file:   UI-UX/Ui_Testing/RFID-UI-Test/MFRC522/SPI-Py 	new file:   UI-UX/Ui_Testing/RFID-UI-Test/SimpleMFRC522.py 	new file:   UI-UX/Ui_Testing/RFID-UI-Test/__init__.py 	new file:   UI-UX/Ui_Testing/RFID-UI-Test/pi-rfid/RFIDDummy.py 	new file:   UI-UX/Ui_Testing/RFID-UI-Test/pi-rfid/RFIDDummy.py.save 	new file:   UI-UX/Ui_Testing/RFID-UI-Test/pi-rfid/error-int.txt 	new file:   UI-UX/Ui_Testing/RFID-UI-Test/pi-rfid/read.py 	new file:   UI-UX/Ui_Testing/RFID-UI-Test/pi-rfid/rfid-19032023.py 	new file:   UI-UX/Ui_Testing/RFID-UI-Test/pi-rfid/write.py 	new file:   UI-UX/Ui_Testing/RFID-UI-Test/rfid-test.py 	new file:   UI-UX/Ui_Testing/RFID-UI-Test/splashscreen.py 	new file:   UI-UX/Ui_Testing/RFID-UI-Test/theme.py
+2706b7c - RutvijP, 7 months ago : RFID_test_Hardware Testing-editv1
+2eb83eb - Chetan2312, 7 months ago : 	modified:   ../../UI-UX/IntegratedPrototype/Prototype1/AddUser_Working.py 	modified:   ../../UI-UX/Ui_Testing/FunctioningFlow/AddUser_Working.py 	deleted:    ../../UI-UX/Ui_Testing/FunctioningFlow/AddUser_Working.py.save 	modified:   ../../UI-UX/Ui_Testing/FunctioningFlow/UserMain_Working.py 	modified:   ../../UI-UX/Ui_Testing/FunctioningFlow/splashscreen.py 	modified:   ../../UI-UX/Ui_Testing/RFID-UI-Test/RFIDDummyWindow.py 	modified:   ../../UI-UX/Ui_Testing/RFID-UI-Test/rfidUI.py 	../../Device_Firmware/pi-rfid/RFIDDummy.py 	../../Device_Firmware/pi-rfid/RFIDDummy.py.save 	../../Device_Firmware/pi-rfid/error-int.txt 	../../Device_Firmware/pi-rfid/rfid-19032023.py 	../../UI-UX/Ui_Testing/RFID-UI-Test/MFRC522.py 	../../UI-UX/Ui_Testing/RFID-UI-Test/MFRC522/ 	../../UI-UX/Ui_Testing/RFID-UI-Test/SimpleMFRC522.py 	../../UI-UX/Ui_Testing/RFID-UI-Test/__init__.py 	../../UI-UX/Ui_Testing/RFID-UI-Test/pi-rfid/ 	../../UI-UX/Ui_Testing/RFID-UI-Test/rfid-test.py 	../../UI-UX/Ui_Testing/RFID-UI-Test/splashscreen.py 	../../UI-UX/Ui_Testing/RFID-UI-Test/theme.py
+464babc - Chetan2312, 7 months ago : 	modified:   ../RFID-UI-Test/rfidUI.py
+94c2f57 - Chetan2312, 7 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+12c043b - RutvijP, 7 months ago : RFID_test_Hardware Testing-editv1
+6dd4f7b - Chetan2312, 7 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+4158e1b - RutvijP, 7 months ago : Merge remote-tracking branch 'origin/Main' into Main
+74b0f08 - Chetan2312, 7 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+5a685c4 - SharmadG, 7 months ago : comment add
+01a456e - RutvijP, 7 months ago : RFID_test_Hardware Testing
+c0d3bba - SharmadG, 7 months ago : Merge remote-tracking branch 'origin/Main' into Main
+2350bdb - Chetan2312, 7 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+11378a4 - SharmadG, 7 months ago : Update EditUser.py
+e82d7c8 - SharmadG, 7 months ago : Update AddUser_Working.py
+fc2eb6c - SharmadG, 7 months ago : Update UserMain_Working.py
+0fc6d88 - SharmadG, 7 months ago : Update MenuGrid.py
+9a3c51b - SharmadG, 7 months ago : Update splashscreen.py
+06e6503 - SharmadG, 7 months ago : close splashscreen.py once the menu button is clicked
+440d251 - SharmadG, 7 months ago : basic
+27e2e62 - SharmadG, 7 months ago : Update ViewUser_Working.py
+c48b718 - SharmadG, 7 months ago : Update AddUser_Working.py
+1b4a38d - Rudy, 7 months ago : DB+Tables+punchverification+basicCRUD+
+d4f2210 - Rudy, 7 months ago : Add files via upload
+4d86a21 - Chetan2312, 7 months ago : 	new file:   Device_Firmware/MFRC522/SPI-Py 	new file:   Device_Firmware/pi-rfid/read.py 	new file:   Device_Firmware/pi-rfid/write.py
+339e1b6 - RutvijP, 7 months ago : RFID_test
+42ef290 - RutvijP, 7 months ago : TOPBand Test
+8ef74b1 - RutvijP, 7 months ago : RFID addition + rfid-test
+3347072 - RutvijP, 7 months ago : RFID addition
+271f661 - Rudy, 7 months ago : SQL+Python ComplianceCheck
+193e56c - RutvijP, 7 months ago : Directory changes for final
+5fd762d - Rutvij Pathak, 7 months ago : cleanupv2
+7d1f9e6 - Rutvij Pathak, 7 months ago : cleanup
+16f1125 - root, 7 months ago :  Committer: root <root@pi>  On branch Main  Your branch is up to date with 'origin/Main'.  Changes to be committed: 	new file:   Device_Firmware/FRAS1/Attendance/Attendance_2019-08-22_00-38-17.csv 	new file:   Device_Firmware/FRAS1/Attendance/Attendance_2019-08-24_13-34-43.csv 	new file:   Device_Firmware/FRAS1/Attendance/Attendance_2019-08-24_14-11-44.csv 	new file:   Device_Firmware/FRAS1/Attendance/Attendance_2019-08-24_14-44-53.csv 	new file:   Device_Firmware/FRAS1/Attendance/Attendance_2021-08-17_21-51-31.csv 	new file:   Device_Firmware/FRAS1/Capture_Image.cpython-39.pyc 	new file:   Device_Firmware/FRAS1/Capture_Image.py 	new file:   Device_Firmware/FRAS1/Capture_Image.py.save 	new file:   Device_Firmware/FRAS1/EmployeeDetails/EmployeeDetails.csv 	new file:   Device_Firmware/FRAS1/Recognize.cpython-39.pyc 	new file:   Device_Firmware/FRAS1/Recognize.py 	new file:   Device_Firmware/FRAS1/Train_Image.cpython-39.pyc 	new file:   Device_Firmware/FRAS1/Train_Image.py 	new file:   Device_Firmware/FRAS1/TrainingImageLabel/Trainner.yml 	new file:   Device_Firmware/FRAS1/automail.py 	new file:   Device_Firmware/FRAS1/check_camera.py 	new file:   Device_Firmware/FRAS1/check_camera.py.save 	new file:   Device_Firmware/FRAS1/check_camera1.cpython-39.pyc 	new file:   Device_Firmware/FRAS1/haarcascade_frontalface_default.xml 	new file:   Device_Firmware/FRAS1/main.py 	new file:   Device_Firmware/FRAS1/opencv_face_detect.py 	new file:   Device_Firmware/FRAS1/requirements.txt
+9e008a0 - root, 7 months ago :  Committer: root <root@pi>  On branch Main  Your branch is up to date with 'origin/Main'.
+85500f7 - Indrayani Nangare, 7 months ago : Add files via upload
+ea7e6d4 - Indrayani Nangare, 7 months ago : Create face_rec
+c2b360f - RutvijP, 7 months ago : Merge remote-tracking branch 'origin/Main' into Main
+c91ed12 - RutvijP, 7 months ago : FactoryCompliance + theme.py setup
+33dcf20 - Indrayani Nangare, 7 months ago : Update fps.py
+517e071 - RutvijP, 7 months ago : Theme-edit-testing
+e34c3e6 - RutvijP, 8 months ago : Functioning Prototype in UI-UX/Ui_Testing/FunctioningFlow
+3c5df14 - RutvijP, 8 months ago : More-Testing
+322122d - RutvijP, 8 months ago : More Testing
+7a62df5 - RutvijP, 8 months ago : SplashScreen-testing snippet
+f766f61 - RutvijP, 8 months ago : SplashScreen-testing snippet
+cfe06b8 - RutvijP, 8 months ago : First_display Testing (functional_grid_testing.py)
+11ea883 - RutvijP, 8 months ago : Testing_Integration
+ef174ea - SharmadG, 8 months ago : Add files via upload
+7627f59 - Chetan2312, 8 months ago : Add files via upload
+e7f6999 - Chetan2312, 8 months ago : Create Hardware design
+cb8e00e - root, 8 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+5d03df4 - root, 8 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+d4e9725 - root, 8 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+de1cf94 - root, 8 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+1704de0 - root, 8 months ago : Merge branch 'Main' of https://github.com/Epitage-Consulting-Pvt-Ltd/Device_V0.0 into Main
+a6b22fc - Chetan2312, 8 months ago : Update issue templates
+038cf8f - Chetan2312, 8 months ago : Update issue templates
+fbacc40 - Chetan2312, 8 months ago : Delete UI_UX
+64e7108 - Chetan2312, 8 months ago : Create Design
+6f17f0b - Chetan2312, 8 months ago : Delete Hardware Design
+b822a4f - Chetan2312, 8 months ago : Create PCB
+5f03ce0 - Chetan2312, 8 months ago : Delete Firmware
+7580f1f - Chetan2312, 8 months ago : Create Firmware
+63b3aee - Chetan2312, 8 months ago : Delete Database
+23e62ee - Chetan2312, 8 months ago : Update Database
+ad935f0 - Chetan2312, 8 months ago : Create Database
+05a053f - Chetan2312, 8 months ago : Update Firmware
+99b0eda - Chetan2312, 8 months ago : Create Hardware Design
+e7a4ea7 - Chetan2312, 8 months ago : Create UI_UX
+e4f8c81 - Chetan2312, 8 months ago : Create Database
+7098831 - Chetan2312, 8 months ago : Create Firmware
+c83cdc5 - Chetan2312, 8 months ago : Initial commit

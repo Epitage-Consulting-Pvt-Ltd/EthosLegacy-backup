@@ -1,0 +1,12 @@
+The Firmware Includes:
+Python Codes for 
+  1. Camera Integration
+  2. FingerPrint Sensor Integration
+  3. RFID Integration
+  4. Printer Integration
+  With Raspberry pi 4 compute module.
+C++ Codes For:
+  1. Mesh Network 
+  2. Sending the punch data over wifi to other Devices
+  3. Parsing the sent data into employee log data
+  4. Sending a acknowledgement flag back to the main device

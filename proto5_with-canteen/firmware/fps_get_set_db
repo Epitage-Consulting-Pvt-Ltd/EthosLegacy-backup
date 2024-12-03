@@ -1,0 +1,301 @@
+# import logging
+# import os
+# from fps_main import Fingerprint
+
+# # Logging configuration
+# logging.basicConfig(format="[%(name)s][%(asctime)s] %(message)s")
+# logger = logging.getLogger("FingerprintTest")
+# logger.setLevel(logging.INFO)
+
+# # Get the directory where the script is located
+# script_dir = os.path.dirname(__file__)
+
+# # Define folders relative to the script directory
+# TEMPLATE_FOLDER = os.path.join(script_dir, "templates")
+# DB_FOLDER = os.path.join(script_dir, "fps_db")
+# os.makedirs(TEMPLATE_FOLDER, exist_ok=True)
+# os.makedirs(DB_FOLDER, exist_ok=True)
+
+# class FingerprintHandler:
+#     def __init__(self, port='COM5', baudrate=115200):
+#         self.fp = Fingerprint(port, baudrate)
+#         if not self.fp.init():
+#             logger.error("Fingerprint sensor initialization failed.")
+#             raise Exception("Initialization failed")
+
+#     def get_template(self, idx):
+#         logger.info("Getting template for ID: %s", idx)
+#         if self.fp.get_template(idx):
+#             ack, param, res, data = self.fp._read_packet()
+#             logger.info("Read packet returned: ack=%s, param=%s, res=%s", ack, param, res)
+#             if ack:
+#                 file_path = os.path.join(TEMPLATE_FOLDER, f"template_{idx}.bin")
+#                 with open(file_path, 'wb') as file:
+#                     file.write(data)
+#                 logger.info("Template data for ID %s saved to %s", idx, file_path)
+#                 return data
+#             else:
+#                 logger.error("Failed to get template for ID: %s", idx)
+#         else:
+#             logger.error("Failed to send get_template command for ID: %s", idx)
+#         return None
+
+#     def set_template(self, idx, data):
+#         logger.info("Setting template for ID: %s", idx)
+#         if self.fp.set_template(idx):
+#             ack, param, res, _ = self.fp._read_packet()
+#             logger.info("Read packet returned: ack=%s, param=%s, res=%s", ack, param, res)
+#             if ack:
+#                 if self.fp.ser.writable():
+#                     self.fp.ser.write(data)
+#                     logger.info("Template data for ID %s set successfully", idx)
+#                     return True
+#                 else:
+#                     logger.error("Failed to write template data for ID: %s", idx)
+#             else:
+#                 logger.error("Failed to set template for ID: %s", idx)
+#         else:
+#             logger.error("Failed to send set_template command for ID: %s", idx)
+#         return False
+
+#     def get_database(self):
+#         logger.info("Getting database information")
+#         if self.fp.get_database():
+#             ack, param, res, data = self.fp._read_packet()
+#             logger.info("Read packet returned: ack=%s, param=%s, res=%s", ack, param, res)
+#             if ack:
+#                 db_path = os.path.join(DB_FOLDER, "fingerprint_database.db")
+#                 with open(db_path, 'wb') as file:
+#                     file.write(data)
+#                 logger.info("Database information saved to %s", db_path)
+#                 return data
+#             else:
+#                 logger.error("Failed to get database information")
+#         else:
+#             logger.error("Failed to send get_database command")
+#         return None
+
+#     def set_database(self, data):
+#         logger.info("Setting database")
+#         if self.fp.set_database():
+#             ack, param, res, _ = self.fp._read_packet()
+#             logger.info("Read packet returned: ack=%s, param=%s, res=%s", ack, param, res)
+#             if ack:
+#                 if self.fp.ser.writable():
+#                     self.fp.ser.write(data)
+#                     logger.info("Database set successfully")
+#                     return True
+#                 else:
+#                     logger.error("Failed to write database data")
+#             else:
+#                 logger.error("Failed to set database")
+#         else:
+#             logger.error("Failed to send set_database command")
+#         return False
+
+#     def close(self):
+#         self.fp.close_serial()
+
+# def main():
+#     handler = FingerprintHandler(port='COM5', baudrate=9600)
+
+#     while True:
+#         print("\nOptions:")
+#         print("1. Get Template")
+#         print("2. Set Template")
+#         print("3. Get Database")
+#         print("4. Set Database")
+#         print("5. Exit")
+
+#         choice = input("Select an option: ")
+
+#         if choice == '1':
+#             idx = input("Enter the ID to get the template: ")
+#             handler.get_template(int(idx))
+
+#         elif choice == '2':
+#             template_files = os.listdir(TEMPLATE_FOLDER)
+#             print("Available templates:")
+#             for i, file in enumerate(template_files):
+#                 print(f"{i + 1}. {file}")
+
+#             file_choice = int(input("Select a template file to set: ")) - 1
+#             if 0 <= file_choice < len(template_files):
+#                 file_path = os.path.join(TEMPLATE_FOLDER, template_files[file_choice])
+#                 with open(file_path, 'rb') as file:
+#                     data = file.read()
+
+#                 idx = input("Enter the ID to set the template: ")
+#                 handler.set_template(int(idx), data)
+#             else:
+#                 print("Invalid selection.")
+
+#         elif choice == '3':
+#             handler.get_database()
+
+#         elif choice == '4':
+#             db_files = os.listdir(DB_FOLDER)
+#             print("Available database files:")
+#             for i, file in enumerate(db_files):
+#                 print(f"{i + 1}. {file}")
+
+#             file_choice = int(input("Select a database file to set: ")) - 1
+#             if 0 <= file_choice < len(db_files):
+#                 file_path = os.path.join(DB_FOLDER, db_files[file_choice])
+#                 with open(file_path, 'rb') as file:
+#                     data = file.read()
+
+#                 handler.set_database(data)
+#             else:
+#                 print("Invalid selection.")
+
+#         elif choice == '5':
+#             break
+
+#         else:
+#             print("Invalid option. Please try again.")
+
+#     handler.close()
+
+# if __name__ == "__main__":
+#     main()
+# test_fingerprint.py
+
+import logging
+import os
+from fps_main import Fingerprint
+
+# Logging configuration
+logging.basicConfig(format="[%(name)s][%(asctime)s] %(message)s")
+logger = logging.getLogger("FingerprintTest")
+logger.setLevel(logging.INFO)
+
+TEMPLATE_FOLDER = "templates"
+DB_FOLDER = "fps_db"
+os.makedirs(TEMPLATE_FOLDER, exist_ok=True)
+os.makedirs(DB_FOLDER, exist_ok=True)
+
+def get_template(fp, idx):
+    logger.info("Getting template for ID: %s", idx)
+    if fp._send_packet("GetTemplate", idx):
+        ack, _, _, data = fp._read_packet()
+        if ack:
+            file_path = os.path.join(TEMPLATE_FOLDER, f"template_{idx}.bin")
+            with open(file_path, 'wb') as file:
+                file.write(data)
+            logger.info("Template data for ID %s saved to %s", idx, file_path)
+            return data
+        else:
+            logger.error("Failed to get template for ID: %s", idx)
+    return None
+
+def set_template(fp, idx, data):
+    logger.info("Setting template for ID: %s", idx)
+    if fp._send_packet("SetTemplate", idx):
+        ack, param, res, _ = fp._read_packet()
+        if ack:
+            if fp.ser.writable():
+                fp.ser.write(data)
+                logger.info("Template data for ID %s set successfully", idx)
+                return True
+            else:
+                logger.error("Failed to write template data for ID: %s", idx)
+        else:
+            logger.error("Failed to set template for ID: %s", idx)
+    return False
+
+def get_database(fp):
+    logger.info("Getting database information")
+    if fp._send_packet("GetDatabase"):
+        ack, param, res, data = fp._read_packet()
+        if ack:
+            db_path = os.path.join(DB_FOLDER, "fingerprint_database.db")
+            with open(db_path, 'wb') as file:
+                file.write(data)
+            logger.info("Database information saved to %s", db_path)
+            return data
+        else:
+            logger.error("Failed to get database information")
+    return None
+
+def set_database(fp, data):
+    logger.info("Setting database")
+    if fp._send_packet("SetDatabase"):
+        ack, param, res, _ = fp._read_packet()
+        if ack:
+            if fp.ser.writable():
+                fp.ser.write(data)
+                logger.info("Database set successfully")
+                return True
+            else:
+                logger.error("Failed to write database data")
+        else:
+            logger.error("Failed to set database")
+    return False
+
+def main():
+    fp = Fingerprint('COM5', 115200)
+    if not fp.init():
+        logger.error("Fingerprint sensor initialization failed.")
+        return
+
+    while True:
+        print("\nOptions:")
+        print("1. Get Template")
+        print("2. Set Template")
+        print("3. Get Database")
+        print("4. Set Database")
+        print("5. Exit")
+
+        choice = input("Select an option: ")
+
+        if choice == '1':
+            idx = input("Enter the ID to get the template: ")
+            get_template(fp, int(idx))
+
+        elif choice == '2':
+            template_files = os.listdir(TEMPLATE_FOLDER)
+            print("Available templates:")
+            for i, file in enumerate(template_files):
+                print(f"{i + 1}. {file}")
+
+            file_choice = int(input("Select a template file to set: ")) - 1
+            if 0 <= file_choice < len(template_files):
+                file_path = os.path.join(TEMPLATE_FOLDER, template_files[file_choice])
+                with open(file_path, 'rb') as file:
+                    data = file.read()
+
+                idx = input("Enter the ID to set the template: ")
+                set_template(fp, int(idx), data)
+            else:
+                print("Invalid selection.")
+
+        elif choice == '3':
+            get_database(fp)
+
+        elif choice == '4':
+            db_files = os.listdir(DB_FOLDER)
+            print("Available database files:")
+            for i, file in enumerate(db_files):
+                print(f"{i + 1}. {file}")
+
+            file_choice = int(input("Select a database file to set: ")) - 1
+            if 0 <= file_choice < len(db_files):
+                file_path = os.path.join(DB_FOLDER, db_files[file_choice])
+                with open(file_path, 'rb') as file:
+                    data = file.read()
+
+                set_database(fp, data)
+            else:
+                print("Invalid selection.")
+
+        elif choice == '5':
+            break
+
+        else:
+            print("Invalid option. Please try again.")
+
+    fp.close_serial()
+
+if __name__ == "__main__":
+    main()
