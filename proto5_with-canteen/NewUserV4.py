@@ -287,7 +287,8 @@ class EmployeeForm(EthosMainWindow):
         self.text_id.clear()
         self.text_dob.clear()
         # self.label_photo.clear()
-        # self.label_rfid.clear()
+        self.text_photo.clear()
+        self.label_rfid.clear()
         # self.label_fing.clear()
         # Clear the enrolled fingerprints list
         self.enrolled_fingers = []
