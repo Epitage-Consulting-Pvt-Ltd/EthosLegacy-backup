@@ -1,27 +1,12 @@
 import codecs
 import logging
-import signal
-import RPi.GPIO as GPIO
 import serial
 import time
-
-import settings
-
-#import os
-#import serial
-
-#PORT_FINGERPRINTSCANNER = '/dev/ttyUSB0' # 5v
-
-
-GPIO.setmode(GPIO.BCM)
-GPIO.setwarnings(False)
-GPIO.setup(11,GPIO.OUT)
-GPIO.setup(12,GPIO.OUT)
+import os 
 
 logging.basicConfig(format="[%(name)s][%(asctime)s] %(message)s")
 logger = logging.getLogger("Fingerprint")
 logger.setLevel(logging.INFO)
-
 
 class Fingerprint():
 
@@ -103,6 +88,7 @@ class Fingerprint():
             self.close()
             return True
         except Exception as e:
+            print("Failed to connect to the serial.")
             logger.error("Failed to connect to the serial.")
             logger.error(e)
         return False
@@ -153,6 +139,21 @@ class Fingerprint():
         if self.ser and self.ser.writable():
             self.ser.write(packet)
             return True
+        else:
+            return False
+
+    def _send_data(self, data, parameter=False): 
+        if self.ser and self.ser.writable():
+            print("length of written data : ", self.ser.write(data))
+            time.sleep(0.1)
+            print("SENDing DATA ...", end=' ')
+            ack, param, _, _ = self._read_packet()
+            print("✅")
+            if parameter:
+                if ack:
+                    return param
+                return -1
+            return ack
         else:
             return False
 
@@ -225,19 +226,23 @@ class Fingerprint():
             if firstbyte and secondbyte:
                 # Data exists.
                 if firstbyte == Fingerprint.PACKET_DATA_0 and secondbyte == Fingerprint.PACKET_DATA_1:
+                    print(">> Data exists...")
+                    # print("FB-SB: ", firstbyte, secondbyte)
                     data = bytearray()
                     data.append(firstbyte)
                     data.append(secondbyte)
+        read_buffer = b''                    
         if data:
             while True:
-                n = self.ser.inWaiting()
-                p = self.ser.read(n)
+                chunk_size = 14400
+                p = self.ser.read(size=chunk_size)
+                read_buffer += p
+                # print(p, type(p))
                 if len(p) == 0:
+                    print(">> Transmission Completed . . .")
                     break
-                data.append(p)
-            data = int(codecs.encode(data[::-1], 'hex_codec'), 16)
 
-        return ack, param, res, data
+        return ack, param, res, read_buffer
 
     def open(self):
         if self._send_packet("Open"):
@@ -264,7 +269,9 @@ class Fingerprint():
         return None
 
     def is_finger_pressed(self):
+        print("Checking if finger is pressed or not.")
         self.set_led(True)
+        time.sleep(1)
         if self._send_packet("IsPressFinger"):
             ack, param, _, _ = self._read_packet()
             self.set_led(False)
@@ -282,12 +289,47 @@ class Fingerprint():
 
     def capture_finger(self, best=False):
         self.set_led(True)
+        time.sleep(1)
         param = 0 if not best else 1
         if self._send_packet("CaptureFinger", param):
             ack, _, _, _ = self._read_packet()
             self.set_led(False)
             return ack
         return None
+
+    def GetImage(self):
+        '''
+            Gets an image that is 258x202 (52116 bytes) and returns it in 407 Data_Packets
+            Use StartDataDownload, and then GetNextDataPacket until done
+            Returns: True (device confirming download starting)
+        '''
+        if self._send_packet("GetImage"):
+            ack, param, res, data = self._read_packet()
+            if not ack:
+                return None, False
+            return data, True  if param == 0 else False
+        else:
+            return None, False
+    
+    def MakeTemplate(self):
+        if not self.capture_finger(best=True):
+            return None
+        if self._send_packet("MakeTemplate"):
+            ack, param, res, data = self._read_packet()
+            if not ack:
+                return None, False
+            return data, True  if param == 0 else False
+        else:
+            return None, False
+    
+    def get_template(self, idx):
+        if self._send_packet("GetTemplate", param=idx):
+            ack, param, res, data = self._read_packet()
+            if not ack:
+                return None, False
+            return data, True  if param == 0 else False
+        else:
+            return None, False
 
     def start_enroll(self, idx):
         if self._send_packet("EnrollStart", idx):
@@ -309,9 +351,71 @@ class Fingerprint():
 
     def enroll3(self):
         if self._send_packet("Enroll3"):
-            ack, _, _, _ = self._read_packet()
-            return ack
-        return None
+            ack, param, res, data = self._read_packet()
+            if not ack:
+                return None, False
+            return data, True  if param == 0 else False
+        return None, None
+
+    # def enroll(self, idx=None, try_cnt=10, sleep=1):
+    #     if idx >= 0:
+    #         # Check whether the finger already exists or not
+    #         for i in range(try_cnt):
+    #             idx = self.identify()
+    #             print("Given id: ", idx)
+    #             if idx is not None:
+    #                 break
+    #             time.sleep(sleep)
+    #             logger.info("Checking existence...")
+    #         if idx is not None and idx >= 0:
+    #             return -1
+
+    #         # Decide an ID for enrolling
+    #         self.open()
+    #         idx = self.get_enrolled_cnt()
+    #     logger.info("Enroll with the ID: %s" % idx)
+
+    #     """Start enrolling
+    #     """
+    #     logger.info("Start enrolling...")
+    #     cnt = 0
+    #     while True:
+    #         # idx=0
+    #         if self.start_enroll(idx):
+    #             # Enrolling started
+    #             break
+    #         else:
+    #             cnt += 1
+    #             if cnt >= try_cnt:
+    #                 return -1
+    #             time.sleep(sleep)
+
+    #     """Start enroll 1, 2, and 3
+    #     """
+    #     for enr_num, enr in enumerate(["enroll1", "enroll2"]):
+    #         print("Start %s..." % enr)
+    #         cnt = 0
+    #         while not self.capture_finger(best=True):
+    #             cnt += 1
+    #             if cnt >= try_cnt:
+    #                 return -1
+    #             time.sleep(sleep)
+    #             logger.info("Capturing a fingerprint...")
+    #         cnt = 0
+    #         while not getattr(self, enr)():
+    #             cnt += 1
+    #             if cnt >= try_cnt:
+    #                 return -1
+    #             time.sleep(sleep)
+    #             logger.info("Enrolling the captured fingerprint...")
+            
+    #     if self.capture_finger(best=True):
+    #         print("Start enroll3...")
+    #         data, downloadstat = self.enroll3()
+    #         if idx == -1:
+    #             return idx, data, downloadstat
+    #     # Enroll process finished
+    #     return idx, None, None
 
     def enroll(self, idx=None, try_cnt=10, sleep=1):
 
@@ -376,11 +480,42 @@ class Fingerprint():
 
         # Enroll process finished
         return idx
+    
+    def verifyTemplate(self, idx, data):
+        data_bytes = bytearray()
+        data_bytes.append(90)
+        data_bytes.append(165)
+        for ch in data:
+            data_bytes.append(ch)
+        if self._send_packet("VerifyTemplate1_1", param=idx):
+            ack, _, _, _ = self._read_packet()
+            if ack:
+                sendstatus = self._send_data(data_bytes)
+                if sendstatus:
+                    print('|', '>'*10, '👍 MATCH FOUND 👍')
+                    return True
+                return False
 
+    def setTemplate(self, idx, data):
+        data_bytes = bytearray()
+        data_bytes.append(90)
+        data_bytes.append(165)
+        for ch in data:
+            data_bytes.append(ch)
+        if self._send_packet("SetTemplate", param=idx):
+            ack, _, _, _ = self._read_packet()
+            if ack:
+                if self._send_data(data_bytes):
+                    print(f'👍 setTemplate @ ID: {idx}')
+                    return True
+                return False
+            return False
+        return False
+       
     def delete(self, idx=None):
         res = None
-        if not idx:
-            # Delete all fingerprints
+        if idx == None:
+        # Delete all fingerprints
             res = self._send_packet("DeleteAll")
         else:
             # Delete all fingerprints
@@ -390,15 +525,9 @@ class Fingerprint():
             return ack
         return None
 
-    def deleteid(self, did):
-        res = self._send_packet("DeleteID", did)
-        if res:
-            ack, _, _, _ = self._read_packet()
-            return ack
-
     def identify(self):
-        while not self.capture_finger():                     #capture_finger function
-            time.sleep(0.1)
+        if not self.capture_finger(best=True):
+            return None
         if self._send_packet("Identify1_N"):
             ack, param, _, _ = self._read_packet()
             if ack:
@@ -407,38 +536,75 @@ class Fingerprint():
                 return -1
         return None
 
+    def identifyTemplate(self, data):
+        data_bytes = bytearray()
+        data_bytes.append(90)
+        data_bytes.append(165)
+        for ch in data:
+            data_bytes.append(ch)
+        if self._send_packet("IdentifyTemplate1_N"):
+            ack, _, _, _ = self._read_packet()
+            if ack:
+                param = self._send_data(data_bytes, parameter=True)
+                return param
+            return -1
+        return None
+    
+    def list_templates(self):
+        templates = [f for f in os.listdir("templates") if f.endswith(".dat")]
+        return templates
+    
+    # def retry_get_template(f, id, retries=5):
+    #     for attempt in range(retries):
+    #         data, success = f.get_template(id)
+    #         if success:
+    #             return data, True
+    #         else:
+    #             print(f"Attempt {attempt + 1} to fetch template for ID {id} failed.")
+    #             time.sleep(1)  # Wait a moment before retrying
+    #     return None, False
 
 if __name__ == '__main__':
 
-    f = Fingerprint(settings.PORT_FINGERPRINTSCANNER, 115200)
+    f = Fingerprint('/dev/ttyUSB0', 115200)
+    if not os.path.exists("templates"):
+        os.makedirs("templates")
    # f = Fingerprint(settings.ser, 9600)
 
-    def signal_handler(signum, frame):
-        f.close_serial()
-    signal.signal(signal.SIGINT, signal_handler)
+    # def signal_handler(signum, frame):
+    #     f.close_serial()
+    # signal.signal(signal.SIGINT, signal_handler)
 
     if f.init():
         print("Open: %s" % str(f.open()))
+        init = f.init()
+        print("is initialized :", init)
         
         #f.delete()
         count = f.get_enrolled_cnt()
         
         ch = 0
-        while ch != 4:
+        while ch != 9:
             print("no : of enrolled : %s" % str(count))
             print("1.Enroll")
             print("2.Delete")
             print("3.Verify")
-            print("4.Exit")
+            print("4.make_template")
+            print("5.set_template")
+            print("6.get_template")
+            print("7. Download All Templates")
+            print("8. List Available Templates")
+            print("9. Exit")
             f1 = 0
-            ch = input("Your Choice:  ")
+            ch = input("Your Choice:  ")  
+
             if ch == '1':
                 while f.get_enrolled_cnt() != count + 1:
                     time.sleep(0.5)
                     idtemp = str(f.identify())
                     #idtemp = -1
                     if idtemp > "-1" and idtemp != "None":
-                        print("You are an already existing User with ID : %s" %str(idtemp+1))
+                        print("You are an already existing User with ID : %s" %(str(idtemp)+str(1)))
                         break
                     else:
                         if f.capture_finger():                      #capture_finger function             
@@ -447,71 +613,111 @@ if __name__ == '__main__':
                             count = count + 1
                             print(" Successfully Enrolled!!!!")
                             break
-                        else:
-                            if f1 == 0:
-                                print("e Place your finger")
-                                f1 = 1
-#				break
-
+            
             if ch == '2':
-                did = input("Enter ID number to delete : ")
-                print("Delete : %s" % str(did))
-                count = 0
-            
+                status = f.delete() # delete all
+                print("\n |__ Delete status: ", status)
+                # To get total enrollment count
+                print(f"\n |__ enrolled counts :", f.get_enrolled_cnt())
+
             if ch == '3':
-                print("Place your Finger")
-                #print(f.capture_finger())                      #capture_finger function
-              
-                #time.sleep(2)
-
-                idtemp = f.identify()
-                if f.capture_finger():                      #capture_finger function
-                    if idtemp == -1:
-                        GPIO.output(11,GPIO.HIGH)
-                        print("You are not a valid user ")
-                        time.sleep(1)
-                        GPIO.output(11,GPIO.LOW)
-                    elif idtemp >= 0:
-                        GPIO.output(12,GPIO.HIGH)
-                        print("You are an already existing User with ID : %s" %str(idtemp+1))
-                        time.sleep(1)
-                        GPIO.output(12,GPIO.LOW)
+                check_finger = f.is_finger_pressed()
+                if check_finger == True:
+                    id = f.identify()
+                    print("\n |__ identified id:", id)
                 else:
-                    print("did not place finger")
-            
+                    print("\n |__ No finger is pressed")
+
             if ch == '4':
-                print("Close: %s" % str(f.close()))
-                f.ser.close()
+                data, downloadstat =f.MakeTemplate()
+                print(f"\n |__ Is template fetched ?", downloadstat)
+                
+                img_arr = []
+                if downloadstat:
+                    data = bytearray(data)
+                    for ch in data:
+                        img_arr.append(ch)
+                print("fetched template data: ", img_arr)
+
+            if ch == '5':
+                DATA = [] # a 502 length python list, that we get after running "task 3"
+                f.delete(idx=0)
+                status = f.setTemplate(idx=0, data=DATA)
+                print("\n |__ set template status :", status)
+
+            
+            if ch == '6':
+                id = int(input("Enter the ID to fetch the template: "))
+                data, success = f.get_template(id)
+                if data:
+                    print(f"Template for ID {id} fetched successfully.")
+                    img_arr = list(data)
+                    # img_arr = [ch for ch in bytearray(data)]
+                    print("Fetched template data:", img_arr)
+                    # Save data to a file if needed
+                    with open(os.path.join("templates", f"template_{id}.dat"), "wb") as file:
+                        file.write(data)
+                        # file.write(bytearray(data))
+                else:
+                    print(f"Failed to fetch template for ID {id}.")
+
+            if ch == '7':
+                count = f.get_enrolled_cnt()
+                for id in range(count):
+                    data, success = f.get_template(id)
+                    # data, success = f.retry_get_template(id)
+                    if data:
+                    # if success:
+                        print(f"Template for ID {id} fetched successfully.")
+                        with open(os.path.join("templates", f"template_{id}.dat"), "wb") as file:
+                            file.write(data)
+                    else:
+                        print(f"Failed to fetch template for ID {id}.")
+                print("All templates downloaded successfully.")
+
+            if ch == '8':
+                templates = f.list_templates()
+                if templates:
+                    print("Available Templates:")
+                    for i, template in enumerate(templates):
+                        print(f"{i + 1}. {template}")
+                    
+                    template_choice = input("Select a template to upload or enter 'all' to upload all templates: ")
+                    current_count = f.get_enrolled_cnt()  # Check the current count of enrolled templates
+                    next_id = current_count  # Set the next ID to be the current count
+
+                    if template_choice.lower() == 'all':
+                        for template in templates:
+                            with open(os.path.join("templates", template), "rb") as file:
+                                data = file.read()
+                                # next_id = f.get_enrolled_cnt()
+                                status = f.setTemplate(idx=next_id, data=data)
+                                if status:
+                                    print(f"Template {template} uploaded successfully to ID {next_id}.")
+                                    next_id += 1
+                                else:
+                                    print(f"Failed to upload template {template}.")
+                    else:
+                        try:
+                            template_index = int(template_choice) - 1
+                            if 0 <= template_index < len(templates):
+                                template = templates[template_index]
+                                with open(os.path.join("templates", template), "rb") as file:
+                                    data = file.read()
+                                    # next_id = f.get_enrolled_cnt()
+                                    status = f.setTemplate(idx=next_id, data=data)
+                                    if status:
+                                        print(f"Template {template} uploaded successfully to ID {next_id}.")
+                                        next_id += 1
+                                    else:
+                                        print(f"Failed to upload template {template}.")
+                            else:
+                                print("Invalid choice. Please select a valid template number.")
+                        except ValueError:
+                            print("Invalid input. Please enter a number or 'all'.")
+                else:
+                    print("No templates available in the 'templates' folder.")
+
+            if ch == '9':
+                f.close_serial()
                 break
-            #    exit()
-            
-       # exit()       
-                
-            
-        
-                
-
-        # print("LED On: %s" % str(f.set_led(True)))
-        # time.sleep(1)
-        # print("LED Off: %s" % str(f.set_led(False)))
-
-        # for i in range(10):
-        #     print("Finger Pressed: %s" % str(f.is_finger_pressed()))
-        #     time.sleep(0.5)
-
-        #print("Get Enrolled Cnt: %s" % str(f.get_enrolled_cnt()))
-
-        #print("Delete: %s" % str(f.delete()))
-
-        #print("Get Enrolled Cnt: %s" % str(f.get_enrolled_cnt()))
-
-        #for i in range(10):
-           # print(i)
-            #print("Enroll: %s" % str(f.enroll()))
-           # print("Get Enrolled Cnt: %s" % str(f.get_enrolled_cnt()))
-            #time.sleep(1)
-        
-
-        #for i in range(10):
-            #print("Identify: %s" % str(f.identify()))
-           # time.sleep(1)
